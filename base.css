@@ -1,20 +1,3 @@
-/* 
-#EDCD1F : yellow (nav bar)
-#232323 : gray (logo)
-#1E2D3B  : light gray (font)
-#3D5975 : light blue (font inside basic)
-#797979 : (font inside about)
-#000000 : (font strong about)
-*/
-
-/*
-avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif : About
- avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif : navbar ,font-size: 14px
- font-family (stack): raleway-semibold, raleway, sans-serif : logo ,font-size: 37px
- font-family (stack): avenir-lt-w01_35-light1475496, sans-serif : slogan  ,font-size: 18px 
- font-family (stack): monoton, fantasy font-size: 51px
-*/
-
 @import url('//db.onlinewebfonts.com/c/3416b4cfa5dbaadadef21fdc73d347cb?family=Avenir+LT+Pro+36+Light');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
 
@@ -423,7 +406,7 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 20rem;
+    padding: 25rem 0;
 } 
 .basic_container{
     background-color: var(--light_gray);
@@ -554,6 +537,12 @@ a{
 .glllery_columns{
     flex: 33rem;
     margin-block: 5rem;
+}
+.gallery_container{
+  max-width: 40rem;
+  width: 50rem;
+  /* height: 50rem;
+  min-height: 50rem; */
 }
 .gallery_img{
     width: 31.667rem;
@@ -690,11 +679,11 @@ a{
     min-height: 33.6rem;
     font-size: 1.8rem;
     line-height: 3.36rem;
-    letter-spacing: .0046rem;
-    margin-inline: 5rem;
+    letter-spacing: 0rem;
+    margin-inline: 1rem;
     text-align: justify; 
-    -moz-text-align-last: justify; 
-    text-align-last: justify;
+    -moz-text-align-last: start; 
+    text-align-last: start;
   }
 
   /* CONTACTS */
@@ -710,7 +699,7 @@ a{
   iframe{
     width: 50rem;
     height: 36.5rem;
-    max-width: 50rem;
+    max-width: 35rem;
     min-height: 36.5rem; 
     border: 0;
   }
@@ -756,6 +745,44 @@ a{
     .basic_underline{
         margin-block: 0 20rem;
     }
+    #about_text{
+      border-top-color: currentcolor;
+      border-top-style: none;
+      border-right-color: currentcolor;
+      border-right-style: none;
+      border-bottom-color: currentcolor;
+      border-bottom-style: none;
+      border-left-color: currentcolor;
+      border-left-style: none;
+      border-image-outset: 0;
+      border-image-repeat: stretch;
+      border-image-slice: 100%;
+      border-image-source: none;
+      border-image-width: 1;
+      outline-color: currentcolor;
+      outline-style: none;
+      outline-width: 0px;
+      vertical-align: baseline;
+      background-color: transparent;
+      background-position-x: 0%;
+      background-position-y: 0%;
+      background-repeat: repeat;
+      background-attachment: scroll;
+      background-image: none;
+      background-size: auto;
+      background-origin: padding-box;
+      background-clip: border-box;
+      font-family: futura-lt-w01-light,sans-serif;
+      max-width: 90.4rem;
+      min-height: 33.6rem;
+      font-size: 1.8rem;
+      line-height: 3.36rem;
+      letter-spacing: .0046rem;
+      margin-inline: 5rem;
+      text-align: justify; 
+      -moz-text-align-last: justify; 
+      text-align-last: justify;
+    }
 
     .gallery{
         display: flex;
@@ -765,7 +792,10 @@ a{
         margin-inline: 20rem;
         gap: 1.5rem;
     }
-
+    .form-control{
+      max-width:max(35rem,42.2rem);
+      width:max(35rem,42.2rem);
+    }
   }
   .contacts_heading{
     border-top-color : currentcolor;
@@ -823,16 +853,16 @@ a{
     background-color: var(--semi_white);
     outline: var(--dark_blue);
     border: var(--dark_blue);
-    width: 42.2rem;
+    /* width: max(25rem,42.2rem); */
     height: 3rem;
-    max-width: 42.2rem;
+    /* max-width: max(35rem,42.2rem); */
     min-height: 3rem;
     text-indent: 1.5rem;
   }
   .textarea{
-    max-width: 42.2rem;
+    max-width: max(35rem,42.2rem);
     min-height: 12.6rem; 
-    width: 42.2rem;
+    /* width: 42.2rem; */
     height: 12.6rem;
     resize: none;
     margin-block-end:5rem;
@@ -860,7 +890,7 @@ a{
     transition-duration: 1s;
   }
  .info  , .phone{
-    max-width: 36rem;
+    max-width: 25rem;
     width: 50rem;
     margin-inline: 5rem; 
     margin-block-end: 1rem;
