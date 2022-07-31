@@ -25,11 +25,18 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./base.css" />
-    
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./base.css" />
+
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -74,7 +81,7 @@
 
   <!-- ======= Home Section ======= -->
   <section id="HOME">
-    <!-- <div class="slideshow-container">
+    <div class="slideshow-container">
       <div class="mySlides fade">
         <img src="../images/home_01.jpg" alt="home_01" class="myslides_img" loading="lazy">
         <div class="text"><span>COMPLEX <br> MACHINRY</span></div>
@@ -95,12 +102,22 @@
         <div class="text"><span>CNC MACHINING <br>PROFESSIONALS</span></div>
       </div>
 
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div> -->
-    <br>
+      <a class="prev" onclick="plusSlides(-1)"><svg class="prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41"
+          style="transform: scale(1.5);">
+          <path style="stroke: #fff;stroke-width: 2px;" d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+        </svg></a>
+      <a class="next next1" onclick="plusSlides(1)"><svg class="next" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 21 41" style="transform: scale(1.5);">
+          <path style="stroke: #fff;stroke-width: 2px;" d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+        </svg></a>
+      <!-- <button data-testid="prevButton" aria-label="Previous" class="prev" onclick="plusSlides(-1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41"><path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path></svg></button>
+      <button data-testid="nextButton" aria-label="Next" class="next" onclick="plusSlides(1)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41"><path d="M20.3 40.8L0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path></svg></button> -->
 
-    <!-- The dots/circles -->contentcontent
+
+    </div>
+    <!-- <br> -->
+
+    <!-- The dots/circles -->
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
@@ -158,55 +175,104 @@
       <div class="products_container">
         <h2 class="heading_2">PRODUCTS</h2>
         <hr class="underline">
-        <div class="products"></div>
+        <div class="products">
+          <ul class="circular_carousel">
+            <li class="carousel_li" data-index="0">
+              <img src="./images/product_01.png" alt="product_01" class="products_img">
+            </li>
+            <li class="carousel_li" data-index="1">
+              <img src="./images/product_02.png" alt="product_02" class="products_img">
+            </li>
+            <li class="carousel_li" data-index="2">
+              <img src="./images/product_03.png" alt="product_03" class="products_img">
+            </li>
+            <li class="carousel_li" data-index="3">
+              <img src="./images/product_04.png" alt="product_04" class="products_img">
+            </li>
+            <li class="carousel_li" data-index="4">
+              <img src="./images/product_05.png" alt="product_05" class="products_img">
+            </li>
+            <li class="carousel_li" data-index="5">
+              <img src="./images/product_06.png" alt="product_06" class="products_img">
+            </li>
+          </ul>
+
+        </div>
       </div>
       <div class="gallery_container">
         <h2 class="heading_2">GALLERY</h2>
         <hr class="underline">
         <div class="gallery">
           <div class="glllery_columns">
-            <img src="../images/gallery_01.JPG" alt="gallery_01" class="gallery_img">
-            <img src="../images/gallery_04.JPG" alt="gallery_04" class="gallery_img">
-            <img src="../images/gallery_07.jpg" alt="gallery_07" class="gallery_img">
-            <img src="../images/gallery_10.jpg" alt="gallery_10" class="gallery_img">
-            <img src="../images/gallery_13.jpg" alt="gallery_13" class="gallery_img">
-            <img src="../images/gallery_16.jpg" alt="gallery_16" class="gallery_img">
-            <img src="../images/gallery_19.jpg" alt="gallery_19" class="gallery_img">
-            <img src="../images/gallery_22.JPG" alt="gallery_22" class="gallery_img">
-            <img src="../images/gallery_25.jpg" alt="gallery_25" class="gallery_img">
-            <img src="../images/gallery_29.jpg" alt="gallery_28" class="gallery_img">
+
+              <img src="../images/gallery_01.JPG" alt="gallery_01" class="gallery_img">
+              <img src="../images/gallery_04.JPG" alt="gallery_04" class="gallery_img">
+              <img src="../images/gallery_07.jpg" alt="gallery_07" class="gallery_img">
+
+
+              <img src="../images/gallery_10.jpg" alt="gallery_10" class="gallery_img">
+              <img src="../images/gallery_13.jpg" alt="gallery_13" class="gallery_img">
+              <img src="../images/gallery_16.jpg" alt="gallery_16" class="gallery_img">
+
+
+              <img src="../images/gallery_19.jpg" alt="gallery_19" class="gallery_img">
+              <img src="../images/gallery_22.JPG" alt="gallery_22" class="gallery_img">
+              <img src="../images/gallery_25.jpg" alt="gallery_25" class="gallery_img">
+
+
+              <img src="../images/gallery_29.jpg" alt="gallery_28" class="gallery_img">
+              <img src="../images/gallery_02.jpg" alt="gallery_02" class="gallery_img">
+              <img src="../images/gallery_05.jpg" alt="gallery_05" class="gallery_img">
 
           </div>
           <div class="glllery_columns">
-            <img src="../images/gallery_02.jpg" alt="gallery_02" class="gallery_img">
-            <img src="../images/gallery_05.jpg" alt="gallery_05" class="gallery_img">
-            <img src="../images/gallery_08.png" alt="gallery_08" class="gallery_img">
-            <img src="../images/gallery_11.jpg" alt="gallery_11" class="gallery_img">
-            <img src="../images/gallery_14.jpg" alt="gallery_14" class="gallery_img">
-            <img src="../images/gallery_17.jpg" alt="gallery_17" class="gallery_img">
-            <img src="../images/gallery_20.jpg" alt="gallery_20" class="gallery_img">
-            <img src="../images/gallery_23.jpg" alt="gallery_23" class="gallery_img">
-            <img src="../images/gallery_26.jpg" alt="gallery_26" class="gallery_img">
-            <img src="../images/gallery_30.jpg" alt="gallery_29" class="gallery_img">
+
+              <img src="../images/gallery_08.png" alt="gallery_08" class="gallery_img">
+              <img src="../images/gallery_11.jpg" alt="gallery_11" class="gallery_img">
+              <img src="../images/gallery_14.jpg" alt="gallery_14" class="gallery_img">
+
+
+              <img src="../images/gallery_17.jpg" alt="gallery_17" class="gallery_img">
+              <img src="../images/gallery_20.jpg" alt="gallery_20" class="gallery_img">
+              <img src="../images/gallery_23.jpg" alt="gallery_23" class="gallery_img">
+
+
+              <img src="../images/gallery_26.jpg" alt="gallery_26" class="gallery_img">
+              <img src="../images/gallery_30.jpg" alt="gallery_29" class="gallery_img">
+              <img src="../images/gallery_03.jpg" alt="gallery_03" class="gallery_img">
 
           </div>
           <div class="glllery_columns">
-            <img src="../images/gallery_03.jpg" alt="gallery_03" class="gallery_img">
-            <img src="../images/gallery_06.jpg" alt="gallery_06" class="gallery_img">
-            <img src="../images/gallery_09.jpg" alt="gallery_09" class="gallery_img">
-            <img src="../images/gallery_12.jpg" alt="gallery_12" class="gallery_img">
-            <img src="../images/gallery_15.jpg" alt="gallery_15" class="gallery_img">
-            <img src="../images/gallery_18.jpg" alt="gallery_18" class="gallery_img">
-            <img src="../images/gallery_21.jpg" alt="gallery_21" class="gallery_img">
-            <img src="../images/gallery_24.jpg" alt="gallery_24" class="gallery_img">
-            <img src="../images/gallery_28.jpg" alt="gallery_27" class="gallery_img">
-            <img src="../images/gallery_32.jpg" alt="gallery_30" class="gallery_img">
-            
+
+              <img src="../images/gallery_06.jpg" alt="gallery_06" class="gallery_img">
+              <img src="../images/gallery_09.jpg" alt="gallery_09" class="gallery_img">
+              <img src="../images/gallery_12.jpg" alt="gallery_12" class="gallery_img">
+
+
+              <img src="../images/gallery_15.jpg" alt="gallery_15" class="gallery_img">
+              <img src="../images/gallery_18.jpg" alt="gallery_18" class="gallery_img">
+              <img src="../images/gallery_21.jpg" alt="gallery_21" class="gallery_img">
+
+
+              <img src="../images/gallery_24.jpg" alt="gallery_24" class="gallery_img">
+              <img src="../images/gallery_28.jpg" alt="gallery_27" class="gallery_img">
+              <img src="../images/gallery_32.jpg" alt="gallery_30" class="gallery_img">
+
+
           </div>
           <!-- <img src="../images/gallery_27.JPG" alt="gallery_31" class="gallery_img">
           <img src="../images/gallery_31.JPG" alt="gallery_32" class="gallery_img">  -->
         </div>
       </div>
+      <button class="gallery_button" id="loadMore">More Products <br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          <path fill-rule="evenodd"
+            d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
     </div>
   </section>
 
