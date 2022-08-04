@@ -108,6 +108,8 @@ let radio = 450;
       let matrexArr = matrex.split(", ");
       let translateXNum = parseInt(matrexArr[12]);
       let translateYNum = parseInt(matrexArr[13]);
+      let translateZNum = parseInt(matrexArr[14]);
+
       if (translateXNum <= 0 && translateYNum == 78 &&translateZNum == 39 ||translateZNum == 43 ){
         item.style.opacity ="1"
       }
