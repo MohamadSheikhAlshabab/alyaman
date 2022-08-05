@@ -25,16 +25,15 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
+  <!-- AOS library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- CSS Files -->
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet" href="./base.css" /> 
 
   <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
@@ -99,7 +98,7 @@
 
       <div class="mySlides fade">
         <img src="../images/home_04.jpg" alt="home_04" class="myslides_img" loading="lazy">
-        <div class="text"><span>CNC MACHINING <br>PROFESSIONALS</span></div>
+        <div class="text"><span class="italic">CNC MACHINING <br>PROFESSIONALS</span></div>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)"><svg class="prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41"
@@ -143,40 +142,42 @@
   </section>
 
   <!-- ======= BASIC Section ======= -->
+
+<div data-aos="fade-up" data-aos-delay="50">
   <section id="BASIC">
-    <h2 class="heading_2 basic_heading">BASIC</h2>
-    <hr class="underline basic_underline" />
+    <h2 class="heading_2 basic_heading" data-aos="fade-up" data-aos-delay="50">BASICS</h2>
+    <hr class="underline basic_underline" data-aos="fade-up" data-aos-delay="100"/>
     <div class="basic_div">
-      <div class="basic_container">
-        <img src="../images/basic_01.jpg" alt="basic_01" class="basic_img">
-        <h2 class="basic_h2">Professional Designs</h2>
-        <p class="basic_p">Using the latest CAD software, our professional designers produce high-quality CAD models
+      <div class="basic_container" data-aos="fade-up" data-aos-delay="250">
+        <img src="../images/basic_01.jpg" alt="basic_01" class="basic_img" data-aos="fade-up" data-aos-delay="350">
+        <h2 class="basic_h2" data-aos="fade-up" data-aos-delay="450">Professional Designs</h2>
+        <p class="basic_p" data-aos="fade-up" data-aos-delay="550">Using the latest CAD software, our professional designers produce high-quality CAD models
           that accurately reflect the original customer's requirements.</p>
       </div>
-      <div class="basic_container">
-        <img src="../images/basic_02.jpg" alt="basic_02" class="basic_img">
-        <h2 class="basic_h2">Skilled Operations</h2>
-        <p class="basic_p">With an integrated configuration of heavy-duty 4-axis milling, 7 axis Swiss-Type turning, and
+      <div class="basic_container" data-aos="fade-up" data-aos-delay="450">
+        <img src="../images/basic_02.jpg" alt="basic_02" class="basic_img" data-aos="fade-up"data-aos-delay="550">
+        <h2 class="basic_h2"data-aos="fade-up" data-aos-delay="650">Skilled Operations</h2>
+        <p class="basic_p" data-aos="fade-up" data-aos-delay="750">With an integrated configuration of heavy-duty 4-axis milling, 7 axis Swiss-Type turning, and
           4-axis EDM machines, our skilled operators carry out efficient and well-planned machining operations.</p>
       </div>
-      <div class="basic_container">
-        <img src="../images/basic_03.jpg" alt="basic_03" class="basic_img">
-        <h2 class="basic_h2">Accurate Finish</h2>
-        <p class="basic_p">By virtue of a variety of accurate measuring equipment, we verify our products to ensure
+      <div class="basic_container" data-aos="fade-up" data-aos-delay="650">
+        <img src="../images/basic_03.jpg" alt="basic_03" class="basic_img" data-aos="fade-up"data-aos-delay="750">
+        <h2 class="basic_h2"data-aos="fade-up"data-aos-delay="850">Accurate Finish</h2>
+        <p class="basic_p"data-aos="fade-up" data-aos-delay="950">By virtue of a variety of accurate measuring equipment, we verify our products to ensure
           their compatibility with the original customer's requirements, and that all measurements lie within accepted
           tolerances.</p>
       </div>
     </div>
   </section>
-
+</div>
   <!-- ======= PRODUCTS Section ======= -->
   <section id="PRODUCTS">
     <div class="products_div">
       <div class="products_container">
-        <h2 class="heading_2">PRODUCTS</h2>
-        <hr class="underline">
-        <div class="products">
-          <ul class="circular_carousel">
+        <h2 class="heading_2" data-aos="fade-up" data-aos-delay="1000">PRODUCTS</h2>
+        <hr class="underline" data-aos="fade-up" data-aos-delay="1050">
+        <div class="products"  data-aos="fade-up" data-aos-delay="1100">
+          <ul class="circular_carousel" >
             <li class="carousel_li" data-index="0">
               <img src="./images/product_01.png" alt="product_01" class="products_img products_img1">
             </li>
@@ -222,60 +223,60 @@
         <h2 class="heading_2">GALLERY</h2>
         <hr class="underline">
         <div class="gallery">
-          <div class="glllery_columns">
+          <div class="gallery_columns">
 
               <img src="../images/gallery_01.png" alt="gallery_01" class="gallery_img">
+              <img src="../images/gallery_02.png" alt="gallery_02" class="gallery_img">
+              <img src="../images/gallery_03.png" alt="gallery_03" class="gallery_img">
+
+
               <img src="../images/gallery_04.png" alt="gallery_04" class="gallery_img">
+              <img src="../images/gallery_05.png" alt="gallery_05" class="gallery_img">
+              <img src="../images/gallery_06.png" alt="gallery_06" class="gallery_img">
+
+
               <img src="../images/gallery_07.png" alt="gallery_07" class="gallery_img">
+              <img src="../images/gallery_08.png" alt="gallery_08" class="gallery_img">
+              <img src="../images/gallery_09.png" alt="gallery_09" class="gallery_img">
 
 
               <img src="../images/gallery_10.jpg" alt="gallery_10" class="gallery_img">
+              <img src="../images/gallery_11.png" alt="gallery_11" class="gallery_img">
+              <img src="../images/gallery_12.png" alt="gallery_12" class="gallery_img">
+
+          </div>
+          <div class="gallery_columns">
+
               <img src="../images/gallery_13.png" alt="gallery_13" class="gallery_img">
+              <img src="../images/gallery_14.png" alt="gallery_14" class="gallery_img">
+              <img src="../images/gallery_15.png" alt="gallery_15" class="gallery_img">
+
+
               <img src="../images/gallery_16.png" alt="gallery_16" class="gallery_img">
+              <img src="../images/gallery_17.png" alt="gallery_17" class="gallery_img">
+              <img src="../images/gallery_18.png" alt="gallery_18" class="gallery_img">
 
 
               <img src="../images/gallery_19.png" alt="gallery_19" class="gallery_img">
-              <img src="../images/gallery_22.png" alt="gallery_22" class="gallery_img">
-              <img src="../images/gallery_25.png" alt="gallery_25" class="gallery_img">
-
-
-              <img src="../images/gallery_29.png" alt="gallery_28" class="gallery_img">
-              <img src="../images/gallery_02.png" alt="gallery_02" class="gallery_img">
-              <img src="../images/gallery_05.png" alt="gallery_05" class="gallery_img">
-
-          </div>
-          <div class="glllery_columns">
-
-              <img src="../images/gallery_08.png" alt="gallery_08" class="gallery_img">
-              <img src="../images/gallery_11.png" alt="gallery_11" class="gallery_img">
-              <img src="../images/gallery_14.png" alt="gallery_14" class="gallery_img">
-
-
-              <img src="../images/gallery_17.png" alt="gallery_17" class="gallery_img">
               <img src="../images/gallery_20.png" alt="gallery_20" class="gallery_img">
-              <img src="../images/gallery_23.png" alt="gallery_23" class="gallery_img">
-
-
-              <img src="../images/gallery_26.png" alt="gallery_26" class="gallery_img">
-              <img src="../images/gallery_30.png" alt="gallery_29" class="gallery_img">
-              <img src="../images/gallery_03.png" alt="gallery_03" class="gallery_img">
-
-          </div>
-          <div class="glllery_columns">
-
-              <img src="../images/gallery_06.png" alt="gallery_06" class="gallery_img">
-              <img src="../images/gallery_09.png" alt="gallery_09" class="gallery_img">
-              <img src="../images/gallery_12.png" alt="gallery_12" class="gallery_img">
-
-
-              <img src="../images/gallery_15.png" alt="gallery_15" class="gallery_img">
-              <img src="../images/gallery_18.png" alt="gallery_18" class="gallery_img">
               <img src="../images/gallery_21.png" alt="gallery_21" class="gallery_img">
 
+          </div>
+          <div class="gallery_columns">
 
+              <img src="../images/gallery_22.png" alt="gallery_22" class="gallery_img">
+              <img src="../images/gallery_23.png" alt="gallery_23" class="gallery_img">
               <img src="../images/gallery_24.png" alt="gallery_24" class="gallery_img">
-              <img src="../images/gallery_28.png" alt="gallery_27" class="gallery_img">
-              <img src="../images/gallery_32.png" alt="gallery_30" class="gallery_img">
+
+
+              <img src="../images/gallery_25.png" alt="gallery_25" class="gallery_img">
+              <img src="../images/gallery_26.png" alt="gallery_26" class="gallery_img">
+              <img src="../images/gallery_28.png" alt="gallery_28" class="gallery_img">
+
+              
+              <img src="../images/gallery_29.png" alt="gallery_29" class="gallery_img">
+              <img src="../images/gallery_30.png" alt="gallery_30" class="gallery_img">
+              <img src="../images/gallery_32.png" alt="gallery_32" class="gallery_img">
 
 
           </div>
@@ -298,7 +299,7 @@
   <!-- ======= CLIENTS Section ======= -->
   <section id="CLIENTS">
     <h2 class="heading_2">VALUED CLIENTS</h2>
-    <hr class="underline" />
+    <hr class="underline"/>
     <picture>
       <source media="(max-width:750px)" srcset="../images/Clients-Mobile.png">
       <img src="../images/Clients-pc.png" alt="clients" id="clients_img">
@@ -340,7 +341,7 @@
 
   <!-- ======= CONTACTS Section ======= -->
   <section id="CONTACTS">
-    <h2 class="heading_2">CONTACT</h2>
+    <h2 class="heading_2" >CONTACT</h2>
     <hr class="underline" />
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1693.4221923405316!2d35.97881552917659!3d31.91082523725389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fbf88c30353%3A0x9fc73e495ca8f734!2z2LTYsdmD2Kkg2KfZhNmK2YXYp9mGINmE2YTYtdmG2KfYudin2Kog2KfZhNmF2LnYr9mG2YrYqQ!5e0!3m2!1sen!2sjo!4v1619988490889!5m2!1sen!2sjo"
@@ -433,7 +434,14 @@
   </footer>
 
   <!--====== JS =======-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./index.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
