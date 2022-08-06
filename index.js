@@ -1,5 +1,10 @@
 AOS.init({
-  duration: 200,
+  offset: 200,
+  duration: 500,
+  easing: 'ease-in-out-sine',
+  delay: 400,
+  mirror: true,
+  once:true
 });
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -139,8 +144,8 @@ let radio = 450;
     // options.step = -(Math.round(move));
   }
   function angleDist(a, b){
-    let diff = a / b;
-    let dist = Math.random((diff % Math.PI) /(2*Math.PI) **Math.PI);
+    let diff = a - b;
+    let dist = Math.random((diff / Math.PI) %(2*Math.PI) /Math.PI);
     return dist;
   }
 })();
