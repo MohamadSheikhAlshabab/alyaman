@@ -1,3 +1,10 @@
+// preloader
+$(function() {
+  $("#status").fadeOut(3000);
+  $("#preloader").fadeOut(3500);
+});
+
+// AOS
 AOS.init({
   offset: 200,
   duration: 500,
@@ -181,7 +188,8 @@ function showSlides1() {
 
 $(document).ready(function(){
   $(".gallery_container").hide();
-  $(".gallery_img").slice(0, 0).show();
+  $(".gallery_img").hide();
+  // $(".gallery_img").slice(0, 0).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
     $(".gallery_container").show();
@@ -192,10 +200,66 @@ $(document).ready(function(){
     <path fill-rule="evenodd"
       d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
   </svg>`))
-    $(".gallery_img:hidden").slice(0, 9).slideDown();
+    $(".gallery_img:hidden").slice(0, 8).show();
     if($(".gallery_img:hidden").length == 0) {
-      $("#loadMore").text("Show More").addClass("noContent");
+      $("#loadMore").text("No More").addClass("noContent").fadeOut('slow');
     }
+    $('html,body').animate({
+      scrollTop: $(this).offset().top
+  }, 1500);
   });
 
 })
+
+
+
+$('a[href=#top]').click(function () {
+  $('body,html').animate({
+      scrollTop: 0
+  }, 600);
+  return false;
+});
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 50) {
+      $('.totop a').fadeIn();
+  } else {
+      $('.totop a').fadeOut();
+  }
+});
+
+
+// to top 
+
+//Get the button:
+mybutton = document.getElementById("to_top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = ()=> {scrollFunction()};
+
+function scrollFunction() {
+  console.log(document.body.scrollTop)
+  if (document.body.scrollTop == 0 ) {
+    mybutton.style.display = "none";
+  } else {
+    mybutton.style.display = "block";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+} 
+
+// close hamburger
+
+$(document).ready(function(){
+  // $('.menu-tab').click(function(){
+  //   $('.menu-hide').toggleClass('show');
+  //   $('.menu-tab').toggleClass('active');
+  // });
+  $('.nav_link').click(function(){
+    $('.menu-hide').removeClass('show');
+    $('.menu-tab').removeClass('active');
+  });
+});

@@ -34,18 +34,30 @@
   <link rel="stylesheet" href="./base.css" /> 
 
   <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
   <!--====== JS =======-->
   <script src="./index.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" defer></script>
 
 </head>
 
-<body>
-
+<body id="body">
+  <div id="preloader">
+    <div id="status">
+       <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+  </div>
+  
   <!-- ======= Header ======= -->
   <header id="header">
     <div id="logo_div">
@@ -229,65 +241,63 @@
         <h2 class="heading_2">GALLERY</h2>
         <hr class="underline">
         <div class="gallery">
-          <div class="gallery_columns">
+          <!-- <div class="gallery_columns"> -->
 
-              <img src="../images/gallery_01.png" alt="gallery_01" class="gallery_img">
-              <img src="../images/gallery_02.png" alt="gallery_02" class="gallery_img">
-              <img src="../images/gallery_03.png" alt="gallery_03" class="gallery_img">
-
-
-              <img src="../images/gallery_04.png" alt="gallery_04" class="gallery_img">
-              <img src="../images/gallery_05.png" alt="gallery_05" class="gallery_img">
-              <img src="../images/gallery_06.png" alt="gallery_06" class="gallery_img">
+              <img src="../images/gallery_01.png" alt="gallery_01" class="gallery_img gallery_item">
+              <img src="../images/gallery_02.png" alt="gallery_02" class="gallery_img gallery_item">
+              <img src="../images/gallery_03.png" alt="gallery_03" class="gallery_img gallery_item">
 
 
-              <img src="../images/gallery_07.png" alt="gallery_07" class="gallery_img">
-              <img src="../images/gallery_08.png" alt="gallery_08" class="gallery_img">
-              <img src="../images/gallery_09.png" alt="gallery_09" class="gallery_img">
+              <img src="../images/gallery_04.png" alt="gallery_04" class="gallery_img gallery_item">
+              <img src="../images/gallery_05.png" alt="gallery_05" class="gallery_img gallery_item">
+              <img src="../images/gallery_06.png" alt="gallery_06" class="gallery_img gallery_item">
 
 
-              <img src="../images/gallery_10.jpg" alt="gallery_10" class="gallery_img">
-              <img src="../images/gallery_11.png" alt="gallery_11" class="gallery_img">
-              <img src="../images/gallery_12.png" alt="gallery_12" class="gallery_img">
-
-          </div>
-          <div class="gallery_columns">
-
-              <img src="../images/gallery_13.png" alt="gallery_13" class="gallery_img">
-              <img src="../images/gallery_14.png" alt="gallery_14" class="gallery_img">
-              <img src="../images/gallery_15.png" alt="gallery_15" class="gallery_img">
-
-
-              <img src="../images/gallery_16.png" alt="gallery_16" class="gallery_img">
-              <img src="../images/gallery_17.png" alt="gallery_17" class="gallery_img">
-              <img src="../images/gallery_18.png" alt="gallery_18" class="gallery_img">
+              <img src="../images/gallery_07.png" alt="gallery_07" class="gallery_img gallery_item">
+              <img src="../images/gallery_08.png" alt="gallery_08" class="gallery_img gallery_item">
+              <img src="../images/gallery_09.png" alt="gallery_09" class="gallery_img gallery_item">
+              <img src="../images/gallery_10.jpg" alt="gallery_10" class="gallery_img gallery_item">
+              
+            <!-- </div>
+            <div class="gallery_columns"> -->
+              
+              <img src="../images/gallery_11.png" alt="gallery_11" class="gallery_img gallery_item">
+              <img src="../images/gallery_12.png" alt="gallery_12" class="gallery_img gallery_item">
+              <img src="../images/gallery_13.png" alt="gallery_13" class="gallery_img gallery_item">
+              <img src="../images/gallery_14.png" alt="gallery_14" class="gallery_img gallery_item">
+              <img src="../images/gallery_15.png" alt="gallery_15" class="gallery_img gallery_item">
 
 
-              <img src="../images/gallery_19.png" alt="gallery_19" class="gallery_img">
-              <img src="../images/gallery_20.png" alt="gallery_20" class="gallery_img">
-              <img src="../images/gallery_21.png" alt="gallery_21" class="gallery_img">
-
-          </div>
-          <div class="gallery_columns">
-
-              <img src="../images/gallery_22.png" alt="gallery_22" class="gallery_img">
-              <img src="../images/gallery_23.png" alt="gallery_23" class="gallery_img">
-              <img src="../images/gallery_24.png" alt="gallery_24" class="gallery_img">
+              <img src="../images/gallery_16.png" alt="gallery_16" class="gallery_img gallery_item">
+              <img src="../images/gallery_17.png" alt="gallery_17" class="gallery_img gallery_item">
+              <img src="../images/gallery_18.png" alt="gallery_18" class="gallery_img gallery_item">
 
 
-              <img src="../images/gallery_25.png" alt="gallery_25" class="gallery_img">
-              <img src="../images/gallery_26.png" alt="gallery_26" class="gallery_img">
-              <img src="../images/gallery_28.png" alt="gallery_28" class="gallery_img">
+              <img src="../images/gallery_19.png" alt="gallery_19" class="gallery_img gallery_item">
+              <img src="../images/gallery_20.png" alt="gallery_20" class="gallery_img gallery_item">
+              
+            <!-- </div>
+            <div class="gallery_columns"> -->
+              
+              <img src="../images/gallery_21.png" alt="gallery_21" class="gallery_img gallery_item">
+              <img src="../images/gallery_22.png" alt="gallery_22" class="gallery_img gallery_item">
+              <img src="../images/gallery_23.png" alt="gallery_23" class="gallery_img gallery_item">
+              <img src="../images/gallery_24.png" alt="gallery_24" class="gallery_img gallery_item">
+
+
+              <img src="../images/gallery_25.png" alt="gallery_25" class="gallery_img gallery_item">
+              <img src="../images/gallery_26.png" alt="gallery_26" class="gallery_img gallery_item">
+              <img src="../images/gallery_28.png" alt="gallery_28" class="gallery_img gallery_item">
 
               
-              <img src="../images/gallery_29.png" alt="gallery_29" class="gallery_img">
-              <img src="../images/gallery_30.png" alt="gallery_30" class="gallery_img">
-              <img src="../images/gallery_32.png" alt="gallery_32" class="gallery_img">
+              <img src="../images/gallery_29.png" alt="gallery_29" class="gallery_img gallery_item">
+              <img src="../images/gallery_30.png" alt="gallery_30" class="gallery_img gallery_item">
+              <img src="../images/gallery_32.png" alt="gallery_32" class="gallery_img gallery_item">
 
 
-          </div>
-          <!-- <img src="../images/gallery_27.JPG" alt="gallery_31" class="gallery_img">
-          <img src="../images/gallery_31.JPG" alt="gallery_32" class="gallery_img">  -->
+          <!-- </div> -->
+          <!-- <img src="../images/gallery_27.JPG" alt="gallery_31" class="gallery_img gallery_item">
+          <img src="../images/gallery_31.JPG" alt="gallery_32" class="gallery_img gallery_item">  -->
         </div>
       </div>
       <button class="gallery_button" id="loadMore">More Products <br>
@@ -431,12 +441,13 @@
 
   </section>
 
-
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <span>© 2022 by Al-Yaman Metal Machining</span>
     <img src="https://img.icons8.com/ios-filled/50/000000/facebook-circled--v1.png" alt="footer_svg" id="footer_SVG"
       loading="lazy"/>
+    <a href="#top" class="totop" onclick="topFunction(), topFunction()"><svg id="to_top" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><rect fill="none" height="24" width="24"/><path d="M5,9l1.41,1.41L11,5.83V22H13V5.83l4.59,4.59L19,9l-7-7L5,9z"/></svg></a>
+    <!-- <button class="scrollToTopBtn" id="myBtn">☝️</button> -->
   </footer>
   <script>
   // $(function() {
@@ -454,6 +465,7 @@
         ) 
       )
 </script>
+
 </body>
 
 </html>
