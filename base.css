@@ -922,7 +922,7 @@ display: none;
   display: none;
   position: fixed;
   bottom: 2rem;
-  right: 5rem;
+  right: 2rem;
   background: var(--yellow);
   fill: var(--white);
   width: 3rem;
