@@ -35,6 +35,19 @@ AOS.init({
   mirror: true,
   once:true
 });
+
+
+$('#hamburger-input').click(function(){
+  $(".overlay").show();
+  $('#sidebar-menu').show( 500 );
+});
+// close hamburger
+$('.nav_link').click(function(){
+  $('#sidebar-menu').hide(300);
+  $(".overlay").hide(500);
+});
+
+// slides
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -234,6 +247,7 @@ $(document).ready(function(){
 })
 
 
+// to_top
 
 $('a[href=#top]').click(function () {
   $('body,html').animate({
@@ -248,20 +262,4 @@ $(window).scroll(function () {
   } else {
       $('.totop a').fadeOut();
   }
-});
-
-
-
-
-// close hamburger
-
-$(document).ready(function(){
-  // $('.menu-tab').click(function(){
-  //   $('.menu-hide').toggleClass('show');
-  //   $('.menu-tab').toggleClass('active');
-  // });
-  $('.nav_link').click(function(){
-    $('.menu-hide').removeClass('show');
-    $('.menu-tab').removeClass('active');
-  });
 });
