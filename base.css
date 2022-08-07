@@ -922,16 +922,16 @@ display: none;
   display: none;
   position: fixed;
   bottom: 2rem;
-  right: 10rem;
+  right: 5rem;
   background: var(--yellow);
   fill: var(--white);
   width: 3rem;
-  height: 4rem;
+  height: 3rem;
   border-radius: 1rem;
 }
 #to_top:hover{
   background: var(--dark_gray);
-  fill: var(--yellow);
+  fill: var(--white);
 }
 
 

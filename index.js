@@ -4,6 +4,28 @@ $(function() {
   $("#preloader").fadeOut(3500);
 });
 
+// to top 
+
+//Get the button:
+mybutton = document.getElementById("to_top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = ()=> {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0;
+} 
+
 // AOS
 AOS.init({
   offset: 200,
@@ -229,27 +251,7 @@ $(window).scroll(function () {
 });
 
 
-// to top 
 
-//Get the button:
-mybutton = document.getElementById("to_top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = ()=> {scrollFunction()};
-
-function scrollFunction() {
-  console.log(document.body.scrollTop)
-  if (document.body.scrollTop == 0 ) {
-    mybutton.style.display = "none";
-  } else {
-    mybutton.style.display = "block";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0;
-} 
 
 // close hamburger
 
