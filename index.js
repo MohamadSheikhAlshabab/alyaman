@@ -58,9 +58,8 @@ function plusSlides(n) {
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(slideIndex =n);
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -76,6 +75,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+// auto play slide show
+
+showSlides1();
+
+function showSlides1() {
+  let i;
+  let slides1 = document.getElementsByClassName("mySlides");
+  let dot = document.getElementsByClassName("dot");
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides1.length) {slideIndex = 1}    
+  for (i = 0; i < dot.length; i++) {
+    dot[i].className = dot[i].className.replace(" active", "");
+  }
+  slides1[slideIndex-1].style.display = "block";  
+  dot[slideIndex-1].className += " active";
+  setTimeout(showSlides1, 5000); 
+}
 
 // <!-- email validtion-->
 
@@ -197,28 +217,6 @@ window.addEventListener("load",function() {
   myTimer = setInterval(function(){ updateSlides()}, 4);
 })
 
-// auto play slide show
-
-showSlides1();
-
-function showSlides1() {
-  let slideIndex1 = 0;
-  let i;
-  let slides1 = document.getElementsByClassName("mySlides");
-  let dot = document.getElementsByClassName("dot");
-  for (i = 0; i < slides1.length; i++) {
-    slides1[i].style.display = "none";  
-  }
-  slideIndex1++;
-  if (slideIndex1 > slides1.length) {slideIndex1 = 1}    
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active", "");
-  }
-  slides1[slideIndex1-1].style.display = "block";  
-  dot[slideIndex-1].className += " active";
-  setTimeout(showSlides1, 5000); // Change image every 2 seconds
-}
-
 // load more
 
 $(document).ready(function(){
@@ -239,9 +237,9 @@ $(document).ready(function(){
     if($(".gallery_img:hidden").length == 0) {
       $("#loadMore").text("No More").addClass("noContent").fadeOut('slow');
     }
-    $('html,body').animate({
-      scrollTop: $(this).offset().top
-  }, 1500);
+  //   $('html,body').animate({
+  //     scrollTop: $(this).offset().top
+  // }, 1500);
   });
 
 })
@@ -250,10 +248,8 @@ $(document).ready(function(){
 // to_top
 
 $('a[href=#top]').click(function () {
-  $('body,html').animate({
-      scrollTop: 0
-  }, 600);
-  return false;
+  $('body,html').animate({ scrollTop: 0 }, 'slow');
+  // return false;
 });
 
 $(window).scroll(function () {

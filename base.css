@@ -4,6 +4,9 @@
 *,*::before,*::after{
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
     --gray: #232323;
     --yellow: #EDCD1F;
@@ -928,12 +931,12 @@ display: none;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  transition: all 100.4s ease-in-out 100s;
 }
 #to_top:hover{
   background: var(--dark_gray);
   fill: var(--white);
 }
-
 
 @media (min-width: 720px) {
   .grid-item {
