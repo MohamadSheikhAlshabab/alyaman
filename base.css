@@ -616,12 +616,14 @@ display: none;
 .basic_container:last-child{
     margin-block: 0 -25rem;
 }
+
 .basic_img{
     max-width: 30rem;
     width: 100%;
     min-height: 22.7rem;
     height: 22.7rem;
     object-fit: cover;
+    margin-bottom: -8rem;
 }
 
 .basic_h2{
@@ -1058,7 +1060,7 @@ flex:calc(100% - 2rem);
     align-items: center;
     margin-top: 8rem;
   }
-  picture{
+  #clients-picture{
     margin-bottom: 8rem;
   }
   #clients_img{
@@ -1138,6 +1140,7 @@ flex:calc(100% - 2rem);
     /* min-height : 36.4rem; */
     max-width : 98rem;
     margin-bottom: 5rem;
+    margin-block: -5rem -8rem;
   }
   strong{
 

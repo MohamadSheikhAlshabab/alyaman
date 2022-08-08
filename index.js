@@ -2,6 +2,7 @@
 $(function() {
   $("#status").fadeOut(3000);
   $("#preloader").fadeOut(3500);
+  $(".overlay").hide();
 });
 
 // to top 
@@ -151,7 +152,7 @@ let radio = 450;
         e.stopPropagation();
         moveSlides(this.dataset.index);
       });
-    });
+    });50
     radStep = (2*Math.PI) / carouselItems.length;
     options.step = 0;
     updateSlides();
@@ -166,19 +167,19 @@ let radio = 450;
   function updateSlides(){
     for(let i=0; i<carouselItems.length; i++){
       item = carouselItems[i];
-      let angulo = radStep*(i+options.step);
-      let rand = Math.ceil(Math.random() * 2);
-      // console.log(rand)
+      //  let angulo = radStep*(i+options.step); make carousel rotate to right
+      let angulo = radStep*(i+options.step); //  let angulo = radStep*(i-options.step); make carousel rotate to left
       let x = Math.sin(angulo)*radio * 2.5 ;
       let z = Math.cos(angulo)*radio*1.5;
       let y = Math.cos(angulo)*55;
       item.style.zIndex = (Math.cos(angulo)>0)?2:1;
-      item.style.transform = "translate3d(" + x /35+ "rem, " + y/7 + "rem, " + z/155 + "rem)";
+      item.style.transform = "translate3d(" + (x/35 )+ "rem, " + (y/7) + "rem, " + (z/150) + "rem)";
       let matrex = window.getComputedStyle(item).getPropertyValue("transform");
       let matrexArr = matrex.split(", ");
       let translateXNum = parseInt(matrexArr[12]);
       let translateYNum = parseInt(matrexArr[13]);
       let translateZNum = parseInt(matrexArr[14]);
+      // console.table({translateXNum,translateYNum,translateZNum})
 
       if (translateXNum <= 0 && translateYNum == 78 &&translateZNum == 39 ||translateZNum == 43 ){
         item.style.opacity ="1"
@@ -200,14 +201,15 @@ let radio = 450;
   }
   // setTimeout(updateSlides,1000)
   function moveSlides(newStep){
-    move = angleDist(options.step-radStep, newStep-radStep)/radStep;
+    move = angleDist(options.step-radStep, newStep-radStep);
     // console.log(options.step, newStep, move);
     TweenLite.to(options, 1, {step: newStep - options.step , onUpdate:updateSlides});
     // options.step = -(Math.round(move));
   }
   function angleDist(a, b){
     let diff = a - b;
-    let dist = Math.random((diff / Math.PI) %(2*Math.PI) /Math.PI);
+    // let dist = ((diff / Math.PI) %(2*Math.PI) /Math.PI);
+    let dist = diff ;
     return dist;
   }
 })();
@@ -222,7 +224,6 @@ window.addEventListener("load",function() {
 $(document).ready(function(){
   $(".gallery_container").hide();
   $(".gallery_img").hide();
-  // $(".gallery_img").slice(0, 0).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
     $(".gallery_container").show();
