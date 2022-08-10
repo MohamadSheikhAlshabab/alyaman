@@ -252,7 +252,7 @@ $(document).ready(function(){
 
 $('a[href=#top]').click(function () {
   $('body,html').animate({ scrollTop: 0 }, 'slow');
-  // return false;
+  return false;
 });
 
 $(window).scroll(function () {

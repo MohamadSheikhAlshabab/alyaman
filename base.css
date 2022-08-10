@@ -1148,6 +1148,7 @@ flex:calc(100% - 2rem);
     font-size: 3rem;
     margin-block-end: 5rem;
     font-family:futura-lt-w01-light,sans-serif;
+    margin-inline: 3rem;
   }
   .contacts_heading{
     border-top-color : currentcolor;
