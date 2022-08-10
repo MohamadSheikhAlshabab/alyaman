@@ -201,15 +201,15 @@ let radio = 450;
   }
   // setTimeout(updateSlides,1000)
   function moveSlides(newStep){
-    move = angleDist(options.step-radStep, newStep-radStep);
+    move = angleDist(newStep ,options.step);
     // console.log(options.step, newStep, move);
-    TweenLite.to(options, 1, {step: newStep - options.step , onUpdate:updateSlides});
+    // TweenLite.to(options, 1, {step: newStep - options.step  , onUpdate:updateSlides});
     // options.step = -(Math.round(move));
   }
   function angleDist(a, b){
     let diff = a - b;
-    // let dist = ((diff / Math.PI) %(2*Math.PI) /Math.PI);
-    let dist = diff ;
+    let dist = ((diff / Math.PI) %(2*Math.PI) /Math.PI);
+    // let dist = diff ;
     return dist;
   }
 })();
@@ -223,6 +223,7 @@ window.addEventListener("load",function() {
 
 $(document).ready(function(){
   $(".gallery_container").hide();
+  $(".gallery_picture").hide();
   $(".gallery_img").hide();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
@@ -234,6 +235,7 @@ $(document).ready(function(){
     <path fill-rule="evenodd"
       d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
   </svg>`))
+    $(".gallery_picture:hidden").slice(0, 8).show();
     $(".gallery_img:hidden").slice(0, 8).show();
     if($(".gallery_img:hidden").length == 0) {
       $("#loadMore").text("No More").addClass("noContent").fadeOut('slow');

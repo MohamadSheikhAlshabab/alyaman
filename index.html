@@ -9,9 +9,9 @@
   <title>Al-Yaman | Home</title>
 
   <!-- Favicons -->
-  <link href="./images/logo.webp" rel="icon" />
-  <link href="./images/logo.webp" rel="apple-touch-icon" />
-  <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon" />
+  <link rel="preload" href="./images/logo.webp" as="image" type="image/webp" rel="icon"  />
+  <link rel="preload" href="./images/logo.webp" as="image" type="image/webp"rel="apple-touch-icon" />
+  <link rel="shortcut icon" href="./images/logo.webp" as="image" type="image/x-icon" />
 
   <!-- Google Fonts -->
   <link href="//db.onlinewebfonts.com/c/3416b4cfa5dbaadadef21fdc73d347cb?family=Avenir+LT+Pro+35+Light" rel="stylesheet"
@@ -38,15 +38,15 @@
   <link rel="stylesheet" href="./base.css" />
 
   <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js" defer></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js" defer async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js" defer async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js" defer async></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer async></script>
   <!--====== JS =======-->
-  <script src="./index-min.js" defer></script>
-  <script src="./index.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" defer></script>
+  <!-- <script src="./index-min.js" defer async></script> -->
+  <script src="./index.js" defer async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js async" defer></script>
 
 </head>
 
@@ -66,17 +66,23 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div id="logo_div">
-      <img src="../images/logo.webp" class="logo_img" alt="logo" loading="lazy" sizes="(max-width: 300px) 100vw, (max-width: 600px) 50vw, (max-width: 900px) 33vw, 225px">
+      <a href="#HOME">
+        <img src="../images/logo.webp" class="logo_img" alt="logo." loading="lazy" sizes="(max-width: 300px) 100vw, (max-width: 600px) 50vw, (max-width: 900px) 33vw, 225px">
+      </a>
       <div class="logo_heading">
-        <h1 class="logo_text" id="logo_h1">Al-Yaman</h1>
-        <h3 class="logo_text" id="logo_h3">METAL MACHINING</h3>
+        <a href="#HOME">
+          <h1 class="logo_text" id="logo_h1" >Al-Yaman</h1>
+        </a>
+        <a href="#HOME">
+          <h3 class="logo_text" id="logo_h3">METAL MACHINING</h3>
+      </a>
       </div>
     </div>
 
     <nav id="navbar">
       <ul id="ul_pc">
         <li class="nav-item"><a class="active_link nav_link" href="#HOME">HOME</a></li>
-        <li class="nav-item"><a class="nav_link" href="#BASIC">BASICS</a></li>
+        <li class="nav-item"><a class="nav_link" href="#SERVICES">SERVICES</a></li>
         <li class="nav-item"><a class="nav_link" href="#PRODUCTS">PRODUCTS</a></li>
         <li class="nav-item"><a class="nav_link" href="#CLIENTS">CLIENTS</a></li>
         <li class="nav-item"><a class="nav_link" href="#ABOUT">ABOUT</a></li>
@@ -89,7 +95,7 @@
       <nav id="sidebar-menu">
         <ul id="ul_mobile">
           <li class="nav-item"><a class="active_link nav_link" href="#HOME">HOME</a></li>
-          <li class="nav-item"><a class="nav_link" href="#BASIC">BASICS</a></li>
+          <li class="nav-item"><a class="nav_link" href="#SERVICES">SERVICES</a></li>
           <li class="nav-item"><a class="nav_link" href="#PRODUCTS">PRODUCTS</a></li>
           <li class="nav-item"><a class="nav_link" href="#CLIENTS">CLIENTS</a></li>
           <li class="nav-item"><a class="nav_link" href="#ABOUT">ABOUT</a></li>
@@ -111,7 +117,7 @@
                   ./images/resized/home_01.webp 300w,"
                   media="(max-width: 300px) 100vw" 
                   type="image/webp"
-                  alt="home_01" 
+                  alt="home_01." 
                   class="myslides_img"
                   loading="lazy"
                   sizes="(max-width: 300px) 100vw, 
@@ -127,7 +133,7 @@
               srcset="./images/home_01.webp  900w,
               ./images/compressed/home_01.webp 600w,
               ./images/resized/home_01.webp 300w,"
-              alt="home_01"
+              alt="home_01."
               class="myslides_img" 
               loading="lazy" 
               sizes="(max-width: 300px) 100vw, 
@@ -151,7 +157,7 @@
                   ./images/resized/home_02.webp 300w,"
                   media="(max-width: 300px) 100vw" 
                   type="image/webp"
-                  alt="home_02" 
+                  alt="home_02." 
                   class="myslides_img"
                   loading="lazy"
                   sizes="(max-width: 300px) 100vw, 
@@ -167,7 +173,7 @@
               srcset="./images/home_02.webp  900w,
               ./images/compressed/home_02.webp 600w,
               ./images/resized/home_02.webp 300w,"
-              alt="home_02"
+              alt="home_02."
               class="myslides_img" 
               loading="lazy" 
               sizes="(max-width: 300px) 100vw, 
@@ -189,7 +195,7 @@
                   ./images/resized/home_03.webp 300w,"
                   media="(max-width: 300px) 100vw" 
                   type="image/webp"
-                  alt="home_03" 
+                  alt="home_03." 
                   class="myslides_img"
                   loading="lazy"
                   sizes="(max-width: 300px) 100vw, 
@@ -205,7 +211,7 @@
               srcset="./images/home_03.webp  900w,
               ./images/compressed/home_03.webp 600w,
               ./images/resized/home_03.webp 300w,"
-              alt="home_03"
+              alt="home_03."
               class="myslides_img" 
               loading="lazy" 
               sizes="(max-width: 300px) 100vw, 
@@ -227,7 +233,7 @@
                   ./images/resized/home_04.webp 300w,"
                   media="(max-width: 300px) 100vw" 
                   type="image/webp"
-                  alt="home_04" 
+                  alt="home_04." 
                   class="myslides_img"
                   loading="lazy"
                   sizes="(max-width: 300px) 100vw, 
@@ -243,7 +249,7 @@
               srcset="./images/home_04.webp  900w,
               ./images/compressed/home_04.webp 600w,
               ./images/resized/home_04.webp 300w,"
-              alt="home_04"
+              alt="home_04."
               class="myslides_img" 
               loading="lazy" 
               sizes="(max-width: 300px) 100vw, 
@@ -279,18 +285,18 @@
   <!-- ======= BASIC Section ======= -->
 
   <div data-aos="fade-up" data-aos-delay="50">
-    <section id="BASIC">
+    <section id="SERVICES">
       <h2 class="heading_2 basic_heading" data-aos="fade-up" data-aos-delay="50">SERVICES</h2>
       <hr class="underline basic_underline" data-aos="fade-up" data-aos-delay="100" />
       <div class="basic_div">
         <div class="basic_container" data-aos="fade-up" data-aos-delay="250">
-          <picture>
+          <picture class="basic_picture">
             <source srcset="./images/basic_01.webp  900w,
                     ./images/compressed/basic_01.webp 600w,
                     ./images/resized/basic_01.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="basic_01" 
+                    alt="basic_01." 
                     class="basic_img"
                     loading="lazy"
                     data-aos="fade-up"
@@ -308,7 +314,7 @@
                 srcset="./images/basic_01.webp  900w,
                 ./images/compressed/basic_01.webp 600w,
                 ./images/resized/basic_01.webp 300w,"
-                alt="basic_01"
+                alt="basic_01."
                 class="basic_img" 
                 loading="lazy"
                 data-aos="fade-up"
@@ -328,13 +334,13 @@
             that accurately reflect the original customer's requirements.</p>
         </div>
         <div class="basic_container" data-aos="fade-up" data-aos-delay="450">
-          <picture>
+          <picture class="basic_picture">
             <source srcset="./images/basic_02.webp  900w,
                     ./images/compressed/basic_02.webp 600w,
                     ./images/resized/basic_02.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="basic_02" 
+                    alt="basic_02." 
                     class="basic_img"
                     loading="lazy"
                     data-aos="fade-up"
@@ -352,7 +358,7 @@
                 srcset="./images/basic_02.webp  900w,
                 ./images/compressed/basic_02.webp 600w,
                 ./images/resized/basic_02.webp 300w,"
-                alt="basic_02"
+                alt="basic_02."
                 class="basic_img" 
                 loading="lazy"
                 data-aos="fade-up"
@@ -372,13 +378,13 @@
             4-axis EDM machines, our skilled operators carry out efficient and well-planned machining operations.</p>
         </div>
         <div class="basic_container" data-aos="fade-up" data-aos-delay="650">
-          <picture>
+          <picture class="basic_picture">
             <source srcset="./images/basic_03.webp  900w,
                     ./images/compressed/basic_03.webp 600w,
                     ./images/resized/basic_03.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="basic_03" 
+                    alt="basic_03." 
                     class="basic_img"
                     loading="lazy"
                     data-aos="fade-up"
@@ -396,7 +402,7 @@
                 srcset="./images/basic_03.webp  900w,
                 ./images/compressed/basic_03.webp 600w,
                 ./images/resized/basic_03.webp 300w,"
-                alt="basic_03"
+                alt="basic_03."
                 class="basic_img" 
                 loading="lazy"
                 data-aos="fade-up"
@@ -434,7 +440,7 @@
                         ./images/resized/product_01.webp 300w,"
                         media="(max-width: 300px) 100vw" 
                         type="image/webp"
-                        alt="product_01" 
+                        alt="product_01." 
                         class="products_img products_img1"
                         loading="lazy"
                         sizes="(max-width: 300px) 100vw, 
@@ -450,7 +456,7 @@
                     srcset="./images/product_01.webp  900w,
                     ./images/compressed/product_01.webp 600w,
                     ./images/resized/product_01.webp 300w,"
-                    alt="product_01"
+                    alt="product_01."
                     class="products_img products_img1" 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
@@ -482,7 +488,7 @@
                         ./images/resized/product_02.webp 300w,"
                         media="(max-width: 300px) 100vw" 
                         type="image/webp"
-                        alt="product_02" 
+                        alt="product_02." 
                         class="products_img products_img2"
                         loading="lazy"
                         sizes="(max-width: 300px) 100vw, 
@@ -498,7 +504,7 @@
                     srcset="./images/product_02.webp  900w,
                     ./images/compressed/product_02.webp 600w,
                     ./images/resized/product_02.webp 300w,"
-                    alt="product_02"
+                    alt="product_02."
                     class="products_img products_img2" 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
@@ -530,7 +536,7 @@
                         ./images/resized/product_03.webp 300w,"
                         media="(max-width: 300px) 100vw" 
                         type="image/webp"
-                        alt="product_03" 
+                        alt="product_03." 
                         class="products_img products_img3"
                         loading="lazy"
                         sizes="(max-width: 300px) 100vw, 
@@ -546,7 +552,7 @@
                     srcset="./images/product_03.webp  900w,
                     ./images/compressed/product_03.webp 600w,
                     ./images/resized/product_03.webp 300w,"
-                    alt="product_03"
+                    alt="product_03."
                     class="products_img products_img3" 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
@@ -578,7 +584,7 @@
                         ./images/resized/product_04.webp 300w,"
                         media="(max-width: 300px) 100vw" 
                         type="image/webp"
-                        alt="product_04" 
+                        alt="product_04." 
                         class="products_img products_img4"
                         loading="lazy"
                         sizes="(max-width: 300px) 100vw, 
@@ -594,7 +600,7 @@
                     srcset="./images/product_04.webp  900w,
                     ./images/compressed/product_04.webp 600w,
                     ./images/resized/product_04.webp 300w,"
-                    alt="product_04"
+                    alt="product_04."
                     class="products_img products_img4" 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
@@ -626,7 +632,7 @@
                         ./images/resized/product_05.webp 300w,"
                         media="(max-width: 300px) 100vw" 
                         type="image/webp"
-                        alt="product_05" 
+                        alt="product_05." 
                         class="products_img products_img5"
                         loading="lazy"
                         sizes="(max-width: 300px) 100vw, 
@@ -642,7 +648,7 @@
                     srcset="./images/product_05.webp  900w,
                     ./images/compressed/product_05.webp 600w,
                     ./images/resized/product_05.webp 300w,"
-                    alt="product_05"
+                    alt="product_05."
                     class="products_img products_img5" 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
@@ -674,7 +680,7 @@
                         ./images/resized/product_06.webp 300w,"
                         media="(max-width: 300px) 100vw" 
                         type="image/webp"
-                        alt="product_06" 
+                        alt="product_06." 
                         class="products_img products_img6"
                         loading="lazy"
                         sizes="(max-width: 300px) 100vw, 
@@ -690,7 +696,7 @@
                     srcset="./images/product_06.webp  900w,
                     ./images/compressed/product_06.webp 600w,
                     ./images/resized/product_06.webp 300w,"
-                    alt="product_06"
+                    alt="product_06."
                     class="products_img products_img6" 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
@@ -720,8 +726,8 @@
         </div>
       </div>
       <div class="gallery_container">
-        <h2 class="heading_2">GALLERY</h2>
-        <hr class="underline">
+        <h2 class="heading_2 heading_gallery">GALLERY</h2>
+        <hr class="underline underline_gallery">
         <div class="gallery">
           <!-- <div class="gallery_columns"> -->
           <!-- <picture>
@@ -735,13 +741,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_01.webp  900w,
                     ./images/compressed/gallery_01.webp 600w,
                     ./images/resized/gallery_01.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_01" 
+                    alt="gallery_01." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -756,7 +762,7 @@
                 srcset="./images/gallery_01.webp  900w,
                 ./images/compressed/gallery_01.webp 600w,
                 ./images/resized/gallery_01.webp 300w,"
-                alt="gallery_01"
+                alt="gallery_01."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -793,13 +799,13 @@
             calc(100vw - 9rem - 200px)"
       >
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_02.webp  900w,
                     ./images/compressed/gallery_02.webp 600w,
                     ./images/resized/gallery_02.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_02" 
+                    alt="gallery_02." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -814,7 +820,7 @@
                 srcset="./images/gallery_02.webp  900w,
                 ./images/compressed/gallery_02.webp 600w,
                 ./images/resized/gallery_02.webp 300w,"
-                alt="gallery_02"
+                alt="gallery_02."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -838,13 +844,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_03.webp  900w,
                     ./images/compressed/gallery_03.webp 600w,
                     ./images/resized/gallery_03.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_03" 
+                    alt="gallery_03." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -859,7 +865,7 @@
                 srcset="./images/gallery_03.webp  900w,
                 ./images/compressed/gallery_03.webp 600w,
                 ./images/resized/gallery_03.webp 300w,"
-                alt="gallery_03"
+                alt="gallery_03."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -883,13 +889,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_04.webp  900w,
                     ./images/compressed/gallery_04.webp 600w,
                     ./images/resized/gallery_04.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_04" 
+                    alt="gallery_04." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -904,7 +910,7 @@
                 srcset="./images/gallery_04.webp  900w,
                 ./images/compressed/gallery_04.webp 600w,
                 ./images/resized/gallery_04.webp 300w,"
-                alt="gallery_04"
+                alt="gallery_04."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -928,13 +934,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_05.webp  900w,
                     ./images/compressed/gallery_05.webp 600w,
                     ./images/resized/gallery_05.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_05" 
+                    alt="gallery_05." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -949,7 +955,7 @@
                 srcset="./images/gallery_05.webp  900w,
                 ./images/compressed/gallery_05.webp 600w,
                 ./images/resized/gallery_05.webp 300w,"
-                alt="gallery_05"
+                alt="gallery_05."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -973,13 +979,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_06.webp  900w,
                     ./images/compressed/gallery_06.webp 600w,
                     ./images/resized/gallery_06.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_06" 
+                    alt="gallery_06." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -994,7 +1000,7 @@
                 srcset="./images/gallery_06.webp  900w,
                 ./images/compressed/gallery_06.webp 600w,
                 ./images/resized/gallery_06.webp 300w,"
-                alt="gallery_06"
+                alt="gallery_06."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1018,13 +1024,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_07.webp  900w,
                     ./images/compressed/gallery_07.webp 600w,
                     ./images/resized/gallery_07.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_07" 
+                    alt="gallery_07." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1039,7 +1045,7 @@
                 srcset="./images/gallery_07.webp  900w,
                 ./images/compressed/gallery_07.webp 600w,
                 ./images/resized/gallery_07.webp 300w,"
-                alt="gallery_07"
+                alt="gallery_07."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1063,13 +1069,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_08.webp  900w,
                     ./images/compressed/gallery_08.webp 600w,
                     ./images/resized/gallery_08.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_08" 
+                    alt="gallery_08." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1084,7 +1090,7 @@
                 srcset="./images/gallery_08.webp  900w,
                 ./images/compressed/gallery_08.webp 600w,
                 ./images/resized/gallery_08.webp 300w,"
-                alt="gallery_08"
+                alt="gallery_08."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1108,13 +1114,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_09.webp  900w,
                     ./images/compressed/gallery_09.webp 600w,
                     ./images/resized/gallery_09.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_09" 
+                    alt="gallery_09." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1129,7 +1135,7 @@
                 srcset="./images/gallery_09.webp  900w,
                 ./images/compressed/gallery_09.webp 600w,
                 ./images/resized/gallery_09.webp 300w,"
-                alt="gallery_09"
+                alt="gallery_09."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1153,13 +1159,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_10.webp  900w,
                     ./images/compressed/gallery_10.webp 600w,
                     ./images/resized/gallery_10.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_10" 
+                    alt="gallery_10." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1174,7 +1180,7 @@
                 srcset="./images/gallery_10.webp  900w,
                 ./images/compressed/gallery_10.webp 600w,
                 ./images/resized/gallery_10.webp 300w,"
-                alt="gallery_10"
+                alt="gallery_10."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1201,13 +1207,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_11.webp  900w,
                     ./images/compressed/gallery_11.webp 600w,
                     ./images/resized/gallery_11.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_11" 
+                    alt="gallery_11." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1222,7 +1228,7 @@
                 srcset="./images/gallery_11.webp  900w,
                 ./images/compressed/gallery_11.webp 600w,
                 ./images/resized/gallery_11.webp 300w,"
-                alt="gallery_11"
+                alt="gallery_11."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1246,13 +1252,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_12.webp  900w,
                     ./images/compressed/gallery_12.webp 600w,
                     ./images/resized/gallery_12.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_12" 
+                    alt="gallery_12." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1267,7 +1273,7 @@
                 srcset="./images/gallery_12.webp  900w,
                 ./images/compressed/gallery_12.webp 600w,
                 ./images/resized/gallery_12.webp 300w,"
-                alt="gallery_12"
+                alt="gallery_12."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1291,13 +1297,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_13.webp  900w,
                     ./images/compressed/gallery_13.webp 600w,
                     ./images/resized/gallery_13.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_13" 
+                    alt="gallery_13." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1312,7 +1318,7 @@
                 srcset="./images/gallery_13.webp  900w,
                 ./images/compressed/gallery_13.webp 600w,
                 ./images/resized/gallery_13.webp 300w,"
-                alt="gallery_13"
+                alt="gallery_13."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1336,13 +1342,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_14.webp  900w,
                     ./images/compressed/gallery_14.webp 600w,
                     ./images/resized/gallery_14.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_14" 
+                    alt="gallery_14." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1357,7 +1363,7 @@
                 srcset="./images/gallery_14.webp  900w,
                 ./images/compressed/gallery_14.webp 600w,
                 ./images/resized/gallery_14.webp 300w,"
-                alt="gallery_14"
+                alt="gallery_14."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1378,13 +1384,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_15.webp  900w,
                     ./images/compressed/gallery_15.webp 600w,
                     ./images/resized/gallery_15.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_15" 
+                    alt="gallery_15." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1399,7 +1405,7 @@
                 srcset="./images/gallery_15.webp  900w,
                 ./images/compressed/gallery_15.webp 600w,
                 ./images/resized/gallery_15.webp 300w,"
-                alt="gallery_15"
+                alt="gallery_15."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1423,13 +1429,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_16.webp  900w,
                     ./images/compressed/gallery_16.webp 600w,
                     ./images/resized/gallery_16.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_16" 
+                    alt="gallery_16." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1444,7 +1450,7 @@
                 srcset="./images/gallery_16.webp  900w,
                 ./images/compressed/gallery_16.webp 600w,
                 ./images/resized/gallery_16.webp 300w,"
-                alt="gallery_16"
+                alt="gallery_16."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1468,13 +1474,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_17.webp  900w,
                     ./images/compressed/gallery_17.webp 600w,
                     ./images/resized/gallery_17.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_17" 
+                    alt="gallery_17." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1489,7 +1495,7 @@
                 srcset="./images/gallery_17.webp  900w,
                 ./images/compressed/gallery_17.webp 600w,
                 ./images/resized/gallery_17.webp 300w,"
-                alt="gallery_17"
+                alt="gallery_17."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1513,13 +1519,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_18.webp  900w,
                     ./images/compressed/gallery_18.webp 600w,
                     ./images/resized/gallery_18.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_18" 
+                    alt="gallery_18." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1534,7 +1540,7 @@
                 srcset="./images/gallery_18.webp  900w,
                 ./images/compressed/gallery_18.webp 600w,
                 ./images/resized/gallery_18.webp 300w,"
-                alt="gallery_18"
+                alt="gallery_18."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1558,13 +1564,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_19.webp  900w,
                     ./images/compressed/gallery_19.webp 600w,
                     ./images/resized/gallery_19.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_19" 
+                    alt="gallery_19." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1579,7 +1585,7 @@
                 srcset="./images/gallery_19.webp  900w,
                 ./images/compressed/gallery_19.webp 600w,
                 ./images/resized/gallery_19.webp 300w,"
-                alt="gallery_19"
+                alt="gallery_19."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1603,13 +1609,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_20.webp  900w,
                     ./images/compressed/gallery_20.webp 600w,
                     ./images/resized/gallery_20.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_20" 
+                    alt="gallery_20." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1624,7 +1630,7 @@
                 srcset="./images/gallery_20.webp  900w,
                 ./images/compressed/gallery_20.webp 600w,
                 ./images/resized/gallery_20.webp 300w,"
-                alt="gallery_20"
+                alt="gallery_20."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1657,13 +1663,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_21.webp  900w,
                     ./images/compressed/gallery_21.webp 600w,
                     ./images/resized/gallery_21.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_21" 
+                    alt="gallery_21." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1678,7 +1684,7 @@
                 srcset="./images/gallery_21.webp  900w,
                 ./images/compressed/gallery_21.webp 600w,
                 ./images/resized/gallery_21.webp 300w,"
-                alt="gallery_21"
+                alt="gallery_21."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1709,13 +1715,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_22.webp  900w,
                     ./images/compressed/gallery_22.webp 600w,
                     ./images/resized/gallery_22.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_22" 
+                    alt="gallery_22." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1730,7 +1736,7 @@
                 srcset="./images/gallery_22.webp  900w,
                 ./images/compressed/gallery_22.webp 600w,
                 ./images/resized/gallery_22.webp 300w,"
-                alt="gallery_22"
+                alt="gallery_22."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1761,13 +1767,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_23.webp  900w,
                     ./images/compressed/gallery_23.webp 600w,
                     ./images/resized/gallery_23.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_23" 
+                    alt="gallery_23." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1782,7 +1788,7 @@
                 srcset="./images/gallery_23.webp  900w,
                 ./images/compressed/gallery_23.webp 600w,
                 ./images/resized/gallery_23.webp 300w,"
-                alt="gallery_23"
+                alt="gallery_23."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1807,13 +1813,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_24.webp  900w,
                     ./images/compressed/gallery_24.webp 600w,
                     ./images/resized/gallery_24.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_24" 
+                    alt="gallery_24." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1828,7 +1834,7 @@
                 srcset="./images/gallery_24.webp  900w,
                 ./images/compressed/gallery_24.webp 600w,
                 ./images/resized/gallery_24.webp 300w,"
-                alt="gallery_24"
+                alt="gallery_24."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1853,13 +1859,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_25.webp  900w,
                     ./images/compressed/gallery_25.webp 600w,
                     ./images/resized/gallery_25.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_25" 
+                    alt="gallery_25." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1874,7 +1880,7 @@
                 srcset="./images/gallery_25.webp  900w,
                 ./images/compressed/gallery_25.webp 600w,
                 ./images/resized/gallery_25.webp 300w,"
-                alt="gallery_25"
+                alt="gallery_25."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1899,13 +1905,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_26.webp  900w,
                     ./images/compressed/gallery_26.webp 600w,
                     ./images/resized/gallery_26.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_26" 
+                    alt="gallery_26." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1920,7 +1926,7 @@
                 srcset="./images/gallery_26.webp  900w,
                 ./images/compressed/gallery_26.webp 600w,
                 ./images/resized/gallery_26.webp 300w,"
-                alt="gallery_26"
+                alt="gallery_26."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1945,13 +1951,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_28.webp  900w,
                     ./images/compressed/gallery_28.webp 600w,
                     ./images/resized/gallery_28.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_28" 
+                    alt="gallery_28." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -1966,7 +1972,7 @@
                 srcset="./images/gallery_28.webp  900w,
                 ./images/compressed/gallery_28.webp 600w,
                 ./images/resized/gallery_28.webp 300w,"
-                alt="gallery_28"
+                alt="gallery_28."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -1991,13 +1997,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_29.webp  900w,
                     ./images/compressed/gallery_29.webp 600w,
                     ./images/resized/gallery_29.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_29" 
+                    alt="gallery_29." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -2012,7 +2018,7 @@
                 srcset="./images/gallery_29.webp  900w,
                 ./images/compressed/gallery_29.webp 600w,
                 ./images/resized/gallery_29.webp 300w,"
-                alt="gallery_29"
+                alt="gallery_29."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -2037,13 +2043,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_30.webp  900w,
                     ./images/compressed/gallery_30.webp 600w,
                     ./images/resized/gallery_30.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_30" 
+                    alt="gallery_30." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -2058,7 +2064,7 @@
                 srcset="./images/gallery_30.webp  900w,
                 ./images/compressed/gallery_30.webp 600w,
                 ./images/resized/gallery_30.webp 300w,"
-                alt="gallery_30"
+                alt="gallery_30."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -2083,13 +2089,13 @@
       (max-width: 700px) calc(100vw - 6rem),
       calc(100vw - 9rem - 200px)">
           </picture> -->
-          <picture>
+          <picture class="gallery_picture">
             <source srcset="./images/gallery_32.webp  900w,
                     ./images/compressed/gallery_32.webp 600w,
                     ./images/resized/gallery_32.webp 300w,"
                     media="(max-width: 300px) 100vw" 
                     type="image/webp"
-                    alt="gallery_32" 
+                    alt="gallery_32." 
                     loading="lazy"
                     sizes="(max-width: 300px) 100vw, 
                     (max-width: 500px) calc(100vw - 2rem), 
@@ -2104,7 +2110,7 @@
                 srcset="./images/gallery_32.webp  900w,
                 ./images/compressed/gallery_32.webp 600w,
                 ./images/resized/gallery_32.webp 300w,"
-                alt="gallery_32"
+                alt="gallery_32."
                 class="gallery_img gallery_item" 
                 loading="lazy" 
                 sizes="(max-width: 300px) 100vw, 
@@ -2143,7 +2149,7 @@
       media="(max-width:750px)" 
       type="image/webp"
       loading="lazy"
-      alt="Clients-Mobile.webp" 
+      alt="Clients-Mobile.webp." 
       id="clients_img" 
       data-aos="fade-up"
       sizes="(max-width: 300px) 100vw, 
@@ -2160,11 +2166,11 @@
       media="(max-width:750px)"
       type="image/webp"
       loading="lazy"
-      alt="Client-Mobile.png" 
+      alt="Client-Mobile.png." 
       id="clients_img" 
       data-aos="fade-up"
       sizes="(max-width: 300px) 100vw, 
-      (max-width: 500px) calc(100vw - 2rem), 
+      (max-width: 500px) calc(100vw - 2rem), data-aos-delay="250"
       (max-width: 600px) 50vw,
       (max-width: 700px) calc(100vw - 6rem),
       (max-width: 900px) 33vw, 
@@ -2177,7 +2183,7 @@
       media="(min-width:750px)"
       type="image/webp"
       loading="lazy"
-      alt="Clients-pc.webp" 
+      alt="Clients-pc.webp." 
       id="clients_img" 
       data-aos="fade-up"
       sizes="(max-width: 300px) 100vw, 
@@ -2193,7 +2199,7 @@
       srcset="./images/Clients-Pc.png 900w,
       ./images/compressed/Clients-Pc.png 600w,
       ./images/resized/Clients-Pc.png 300w,"
-      alt="Clients-pc"
+      alt="Clients-pc."
       media="(min-width:750px)"
       id="clients_img"
       loading="lazy"
@@ -2234,14 +2240,14 @@
   <!-- ======= ABOUT Section ======= -->
   <section id="ABOUT">
     <h2 class="heading_2" data-aos="fade-up">ABOUT</h2>
-    <hr class="underline" data-aos="fade-up" />
+    <hr class="underline" data-aos="fade-up"/>
     <picture>
       <source srcset="./images/about.webp  900w,
               ./images/compressed/about.webp 600w,
               ./images/resized/about.webp 300w,"
               media="(max-width: 300px) 100vw" 
               type="image/webp"
-              alt="about" 
+              alt="about." 
               id="about_img"
               loading="lazy"
               data-aos="fade-up"
@@ -2258,7 +2264,7 @@
           srcset="./images/about.webp  900w,
           ./images/compressed/about.webp 600w,
           ./images/resized/about.webp 300w,"
-          alt="about"
+          alt="about."
           id="about_img"
           loading="lazy"
           data-aos="fade-up"
@@ -2312,83 +2318,43 @@
   <section id="CONTACTS">
     <h2 class="heading_2" data-aos="fade-up">CONTACT US</h2>
     <hr class="underline" data-aos="fade-up" />
+
+    <p class="contacts_para" data-aos="fade-up">For any inquiries, questions or commendations, please contact us.</p>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1693.4221923405316!2d35.97881552917659!3d31.91082523725389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fbf88c30353%3A0x9fc73e495ca8f734!2z2LTYsdmD2Kkg2KfZhNmK2YXYp9mGINmE2YTYtdmG2KfYudin2Kog2KfZhNmF2LnYr9mG2YrYqQ!5e0!3m2!1sen!2sjo!4v1619988490889!5m2!1sen!2sjo"
-      allow="fullscreen" loading="lazy" data-aos="fade-up"></iframe>
+      allow="fullscreen" 
+      loading="lazy" 
+      data-aos="fade-up" 
+      width=”600”
+      height=”450” 
+      frameborder="0"
+      allowtransparency="true"
+      allow="encrypted-media"
+      allow="accelerometer; autoplay;
+      encrypted-media; gyroscope;
+      picture-in-picture"
+      allowfullscreen></iframe>
 
     <div class="contacts_form">
 
       <div class="info" data-aos="fade-up">
         <div class="address">
-          <i class="bi bi-geo-alt"></i>
           <h4 class="contacts_heading" data-aos="fade-up">Head Office</h4>
           <p class="contacts_paragraph" data-aos="fade-up">Al-Yaman Metal Machining</p>
           <p class="contacts_paragraph" data-aos="fade-up">Al-Oroubah St.</p>
           <p class="contacts_paragraph" data-aos="fade-up">Abu Alanda</p>
           <p class="contacts_paragraph" data-aos="fade-up">Amman</p>
           <p class="contacts_paragraph" data-aos="fade-up">Joran</p>
-          <p class="contacts_paragraph contacts_email" data-aos="fade-up">Mohamad@alyaman.com</p>
-          <p class="contacts_paragraph" data-aos="fade-up">Tel: +962-798437605</p>
-          <p class="contacts_paragraph" data-aos="fade-up">Fax: 06-4162922</p>
-        </div>
-        <div>
-          <h4 class="contacts_heading" data-aos="fade-up">Employment</h4>
-          <p class="contacts_paragraph" data-aos="fade-up">
-            To apply for a job with Al- Yaman Metal Machining , please send a cover letter together with your C.V. to:<a
-              href="mailto:Ali.m.Awad@mail.com" class="contacts_paragraph">Ali.m.Awad@mail.com</a>
-          </p>
         </div>
         <div id="underline" class="underline"></div>
       </div>
 
       <div class="phone" id="inquiries">
-
-        <h4 class="contacts_heading" data-aos="fade-up">Inquiries</h4>
-        <p class="contacts_paragraph" data-aos="fade-up">For any inquiries, questions or commendations, please call:
-          06-4162922 or fill out
-          the following
-          form.
-        </p>
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-
-          <h4 class="contacts_heading" data-aos="fade-up">Contact Us</h4>
-
-          <div class="contacts_div">
-            <div>
-              <label for="name" class="contacts_paragraph contacts_label" data-aos="fade-up">Enter Your Name</label>
-            </div>
-            <input type="text" name="name" class="form-control" id="name" placeholder="Name" required
-              data-aos="fade-up">
-          </div>
-
-          <div class="contacts_div">
-            <div>
-              <label for="email" class="contacts_paragraph contacts_label" data-aos="fade-up">Enter Your Email *</label>
-            </div>
-            <input type="email" onkeyup="check()" class="form-control" name="email" id="email" autocomplete="off"
-              placeholder="Email" required data-aos="fade-up">
-          </div>
-
-          <div class="contacts_div">
-            <div>
-              <label for="subject" class="contacts_paragraph contacts_label" data-aos="fade-up">Enter Your
-                Subject</label>
-              <div>
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required
-                  data-aos="fade-up">
-              </div>
-
-              <div class="contacts_div">
-                <div>
-                  <label for="message" class="contacts_paragraph contacts_label" data-aos="fade-up">Enter your
-                    message</label>
-                </div>
-                <textarea class="form-control textarea" name="message" rows="5" placeholder="Message" required
-                  data-aos="fade-up"></textarea>
-              </div>
-              <div class="text-center"><button type="submit" data-aos="fade-up">Submit</button></div>
-        </form>
+        <h4 class="contacts_heading" data-aos="fade-up">Contact Info</h4>
+        <p class="contacts_paragraph" data-aos="fade-up"><strong>Email:</strong> Mohamad@alyaman.com</p>
+        <p class="contacts_paragraph" data-aos="fade-up"><strong>Tel:</strong> +962-798437605</p>
+        <p class="contacts_paragraph" data-aos="fade-up"><strong>Tel/Fax:</strong> 06 4162922</p>
+        <div id="underline" class="underline"></div>
       </div>
 
     </div>
@@ -2398,7 +2364,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <span>© 2022 by Al-Yaman Metal Machining</span>
-    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-circled--v1.png" alt="footer_svg" id="footer_SVG"
+    <img src="https://img.icons8.com/ios-filled/50/000000/facebook-circled--v1.png" alt="footer_svg." id="footer_SVG"
       loading="lazy" />
     <a href="#top" class="totop" onclick="topFunction(), topFunction()"><svg id="to_top"
         xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24">
@@ -2406,7 +2372,7 @@
         <path d="M5,9l1.41,1.41L11,5.83V22H13V5.83l4.59,4.59L19,9l-7-7L5,9z" />
       </svg></a>
   </footer>
-  <script>
+  <script async defer>
 
     document.querySelectorAll('img')
       .forEach((img) =>
