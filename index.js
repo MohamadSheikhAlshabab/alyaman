@@ -173,7 +173,7 @@ let radio = 450;
       let z = Math.cos(angulo)*radio*1.5;
       let y = Math.cos(angulo)*55;
       item.style.zIndex = (Math.cos(angulo)>0)?2:1;
-      item.style.transform = "translate3d(" + (x/35 )+ "rem, " + (y/7) + "rem, " + (z/150) + "rem)";
+      item.style.transform = "translate3d(" + (x/35 )+ "rem, " + (y/7) + "rem, " + (z/155) + "rem)";
       let matrex = window.getComputedStyle(item).getPropertyValue("transform");
       let matrexArr = matrex.split(", ");
       let translateXNum = parseInt(matrexArr[12]);
@@ -187,12 +187,12 @@ let radio = 450;
       else if (translateXNum == 278 && translateYNum == 39 &&translateZNum == 21 ||
         translateXNum == -278 && translateYNum == 39 &&translateZNum == 21 
         ){
-      item.style.opacity ="0.5"
+      item.style.opacity ="0.3"
       }
       else if (translateXNum == 278 && translateYNum == -39 &&translateZNum == -21  ||
         translateXNum == -278 && translateYNum == -39 &&translateZNum == -21 
         ){
-        item.style.opacity ="0.3"
+        item.style.opacity ="0.2"
       }
       else if (translateXNum >= 0 && translateYNum == -78 &&translateZNum == -43 ){
         item.style.opacity ="0.1"
