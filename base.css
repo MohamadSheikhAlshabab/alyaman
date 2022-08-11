@@ -250,7 +250,11 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
   font-display: block;
   font-family:"Avenir-LT-W01_35-Light1475496";
   src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix");
-  src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/908c4810-64db-4b46-bb8e-823eb41f68c0.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c") format("svg");
+  src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/edefe737-dc78-4aa3-ad03-3c6f908330ed.eot?#iefix") format("eot"),
+  url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/0078f486-8e52-42c0-ad81-3c8d3d43f48e.woff2") format("woff2"),
+  url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/908c4810-64db-4b46-bb8e-823eb41f68c0.woff") format("woff"),
+  url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/4577388c-510f-4366-addb-8b663bcc762a.ttf") format("truetype"),
+  url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b0268c31-e450-4159-bfea-e0d20e2b5c0c.svg#b0268c31-e450-4159-bfea-e0d20e2b5c0c") format("svg");
 }
 @font-face {
   font-display: block;
@@ -408,6 +412,10 @@ html {
 html,body{
     font-size: 62.5%;
     overflow-x: hidden;
+}
+*::selection{
+color: var(--white);
+background-color: var(--yellow);
 }
 /*--------------------------------------------------------------
 # Preloader
@@ -845,7 +853,7 @@ height: 100%;
       display: none;
       border: none;
       padding: 0px;
-      margin: 0px;
+      margin: 8px;
       font-family: 'Cabin', Sans-serif;
       background: linear-gradient(
         to bottom, 
@@ -1701,6 +1709,7 @@ flex:calc(100% - 2rem);
     }
     #logo_h3{
       letter-spacing: 0.39rem;
+      margin-block-end: 1rem;
     }
     #logo_div{
       max-width: 100%;
@@ -1723,7 +1732,17 @@ flex:calc(100% - 2rem);
       transform :translateY( 5rem );
     }
   }
-  
+
+  /* 560px  =>> 560px/16px = 35rem*/
+  /* less than 560px or 35rem */
+  @media (max-width:35rem) {
+    .heading_2 {
+      font-size: 3rem;
+    }
+    .heading_gallery{
+      font-size: 2rem;
+    }
+  }
   /* 480px  =>> 480px/16px = 30rem*/
     /* less than 480px or 30rem */
   @media (max-width: 30rem){
@@ -1733,6 +1752,7 @@ flex:calc(100% - 2rem);
     #logo_h3{
       letter-spacing: 0.09rem;
       font-size: 1rem;
+      margin-block-end: 2rem;
     }
     iframe{
       width: 94rem;
@@ -1918,7 +1938,7 @@ flex:calc(100% - 2rem);
 
   /* 1280px = HD =>> 1280px/16px = 80rem*/
     /* greater than 1280px or 80rem */
-  @media (min-width:85.38125rem) {
+  @media (min-width:86rem) {
     :root{
       --fs-400:.5rem;
       --fs-600:1rem;

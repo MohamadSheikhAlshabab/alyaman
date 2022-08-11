@@ -12,25 +12,25 @@
   <title>Al-Yaman | Home</title>
 
   <!-- Favicons -->
-  <link rel="preload" href="./images/logo.webp" as="image" type="image/webp" rel="icon"  />
-  <link rel="preload" href="./images/logo.webp" as="image" type="image/webp"rel="apple-touch-icon" />
-  <link rel="shortcut icon" href="./images/logo.webp" as="image" type="image/x-icon" />
+  <link  href="./images/original/logo.webp" as="image" type="image/webp" rel="icon"  />
+  <link  href="./images/original/logo.webp" as="image" type="image/webp"rel="apple-touch-icon" />
+  <link rel="shortcut icon" href="./images/original/logo.webp" as="image" type="image/x-icon" />
 
   <!-- Google Fonts -->
-  <link href="//db.onlinewebfonts.com/c/3416b4cfa5dbaadadef21fdc73d347cb?family=Avenir+LT+Pro+35+Light" rel="stylesheet"
-    type="text/css" />
+  <link href="//db.onlinewebfonts.com/c/3416b4cfa5dbaadadef21fdc73d347cb?family=Avenir+LT+Pro+35+Light" rel="stylesheet" media="screen"
+    type="text/css" rel="preload"  as="font"  crossorigin />
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    rel="stylesheet preload" as="font" type="font/format" crossorigin media="screen"/>
+  <link rel="preconnect preload" as="font" type="font/format" crossorigin href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet preload" as="font" type="font/format" crossorigin media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet preload" as="font" type="font/format" crossorigin  media="screen"/>
 
   <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet preload"  as="font" type="font/format" crossorigin media="screen" />
 
   <!-- AOS library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet preload"  as="font" type="font/format" crossorigin media="screen">
 
   <!-- CSS Files -->
   <!-- <link rel="stylesheet" href="./reset-min.css" />
@@ -38,18 +38,18 @@
   <link rel="stylesheet" href="./fonts-min.css">
   <link rel="stylesheet" href="./fonts.css">
   <link rel="stylesheet" href="./base-min.css" /> -->
-  <link rel="stylesheet" href="./base.css" />
+  <link rel="stylesheet preload preconnect" media="screen" href="./base.css" crossorigin />
 
   <!-- JS Libraries -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer async></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js" defer async></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js" defer async></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js" defer async></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/CSSPlugin.min.js" defer ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/easing/EasePack.min.js" defer ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js" defer ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer ></script>
   <!--====== JS =======-->
   <!-- <script src="./index-min.js" defer async></script> -->
-  <script src="./index.js" defer async></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js async" defer></script>
+  <script src="./index.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" defer></script>
 
 </head>
 
@@ -70,7 +70,7 @@
   <header id="header">
     <div id="logo_div">
       <a href="#HOME">
-        <img src="../images/logo.webp" class="logo_img" alt="logo."  width="47" height="49" loading="lazy" sizes="(max-width: 300px) 100vw, (max-width: 600px) 50vw, (max-width: 900px) 33vw, 225px">
+        <img src="../images/original/logo.webp" class="logo_img" alt="logo."  width="47" height="49" loading="lazy" sizes="(max-width: 300px) 100vw, (max-width: 600px) 50vw, (max-width: 900px) 33vw, 225px">
       </a>
       <div class="logo_heading">
         <a href="#HOME">
@@ -115,7 +115,9 @@
     <div class="slideshow-container">
       <div class="mySlides fade">
         <picture>
-          <source srcset="./images/home_01.webp  900w,
+          <source srcset="
+                  ./images/original/home_01.jpg  1200w,
+                  ./images/original/home_01.webp  900w,
                   ./images/compressed/home_01.webp 600w,
                   ./images/resized/home_01.webp 300w,"
                   media="(max-width: 300px) 100vw" 
@@ -133,8 +135,10 @@
                   225px"
           >
           <img 
-              src="./images/home_01.jpg"
-              srcset="./images/home_01.webp  900w,
+              src="./images/resized/home_01.webp"
+              srcset="
+              ./images/original/home_01.jpg  1200w,
+              ./images/original/home_01.webp  900w,
               ./images/compressed/home_01.webp 600w,
               ./images/resized/home_01.webp 300w,"
               alt="home_01."
@@ -157,9 +161,12 @@
       <div class="mySlides fade">
 
         <picture>
-          <source srcset="./images/home_02.webp  900w,
+          <source srcset="
+                  ./images/resized/home_02.webp  300w,
                   ./images/compressed/home_02.webp 600w,
-                  ./images/resized/home_02.webp 300w,"
+                  ./images/original//home_02.webp 900w,
+                  ./images/original/home_02.jpg  1200w,
+                  "
                   media="(max-width: 300px) 100vw" 
                   type="image/webp"
                   alt="home_02." 
@@ -175,10 +182,12 @@
                   225px"
           >
           <img 
-              src="./images/home_02.jpg"
-              srcset="./images/home_02.webp  900w,
-              ./images/compressed/home_02.webp 600w,
-              ./images/resized/home_02.webp 300w,"
+              src="./images/resized/home_02.webp"
+              srcset="./images/resized/home_02.webp  300w,
+              ./images/compressed/home_02.webp  600w,
+              ./images/original/home_02.webp 900w,
+              ./images/original/home_02.jpg  1200w,
+              "
               alt="home_02."
               width="200" height="200"
               class="myslides_img" 
@@ -197,7 +206,9 @@
 
       <div class="mySlides fade">
         <picture>
-          <source srcset="./images/home_03.webp  900w,
+          <source srcset="
+                  ./images/original/home_03.jpg  1200w,
+                  ./images/original/home_03.webp  900w,
                   ./images/compressed/home_03.webp 600w,
                   ./images/resized/home_03.webp 300w,"
                   media="(max-width: 300px) 100vw" 
@@ -215,8 +226,10 @@
                   225px"
           >
           <img 
-              src="./images/home_03.jpg"
-              srcset="./images/home_03.webp  900w,
+              src="./images/resized//home_03.webp"
+              srcset="
+              ./images/original/home_03.jpg  1200w,
+              ./images/original/home_03.webp  900w,
               ./images/compressed/home_03.webp 600w,
               ./images/resized/home_03.webp 300w,"
               alt="home_03."
@@ -237,7 +250,9 @@
 
       <div class="mySlides fade">
         <picture>
-          <source srcset="./images/home_04.webp  900w,
+          <source srcset="
+                  ./images/original/home_04.jpg  1200w,
+                  ./images/original/home_04.webp  900w,
                   ./images/compressed/home_04.webp 600w,
                   ./images/resized/home_04.webp 300w,"
                   media="(max-width: 300px) 100vw" 
@@ -251,12 +266,14 @@
                   (max-width: 600px) 50vw,
                   (max-width: 700px) calc(100vw - 6rem),
                   (max-width: 900px) 33vw, 
-                  calc(100vw - 9rem - 200px),
+                  calc(100vw - 9rem - 200px),/snap/code/104/usr/share/code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
                   225px"
           >
           <img 
-              src="./images/home_04.jpg"
-              srcset="./images/home_04.webp  900w,
+              src="./images/resized/home_04.webp"
+              srcset="
+              ./images/original/home_04.jpg  1200w,
+              ./images/original/home_04.webp  900w,
               ./images/compressed/home_04.webp 600w,
               ./images/resized/home_04.webp 300w,"
               alt="home_04."
@@ -302,7 +319,7 @@
       <div class="basic_div">
         <div class="basic_container" data-aos="fade-up" data-aos-delay="250">
           <picture class="basic_picture">
-            <source srcset="./images/basic_01.webp  900w,
+            <source srcset="./images/original/basic_01.webp  900w,
                     ./images/compressed/basic_01.webp 600w,
                     ./images/resized/basic_01.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -322,8 +339,8 @@
                     225px"
             >
             <img 
-                src="./images/basic_01.png"
-                srcset="./images/basic_01.webp  900w,
+                src="./images/original/basic_01.jpg"
+                srcset="./images/original/basic_01.webp  900w,
                 ./images/compressed/basic_01.webp 600w,
                 ./images/resized/basic_01.webp 300w,"
                 alt="basic_01."
@@ -348,7 +365,7 @@
         </div>
         <div class="basic_container" data-aos="fade-up" data-aos-delay="450">
           <picture class="basic_picture">
-            <source srcset="./images/basic_02.webp  900w,
+            <source srcset="./images/original/basic_02.webp  900w,
                     ./images/compressed/basic_02.webp 600w,
                     ./images/resized/basic_02.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -368,8 +385,8 @@
                     225px"
             >
             <img 
-                src="./images/basic_02.png"
-                srcset="./images/basic_02.webp  900w,
+                src="./images/original/basic_02.jpg"
+                srcset="./images/original/basic_02.webp  900w,
                 ./images/compressed/basic_02.webp 600w,
                 ./images/resized/basic_02.webp 300w,"
                 alt="basic_02."
@@ -394,7 +411,7 @@
         </div>
         <div class="basic_container" data-aos="fade-up" data-aos-delay="650">
           <picture class="basic_picture">
-            <source srcset="./images/basic_03.webp  900w,
+            <source srcset="./images/original/basic_03.webp  900w,
                     ./images/compressed/basic_03.webp 600w,
                     ./images/resized/basic_03.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -414,8 +431,8 @@
                     225px"
             >
             <img 
-                src="./images/basic_03.png"
-                srcset="./images/basic_03.webp  900w,
+                src="./images/original/basic_03.jpg"
+                srcset="./images/original/basic_03.webp  900w,
                 ./images/compressed/basic_03.webp 600w,
                 ./images/resized/basic_03.webp 300w,"
                 alt="basic_03."
@@ -452,7 +469,7 @@
           <ul class="circular_carousel">
             <li class="carousel_li" data-index="0">
               <picture>
-                <source srcset="./images/product_01.webp  900w,
+                <source srcset="./images/original/product_01.webp  900w,
                         ./images/compressed/product_01.webp 600w,
                         ./images/resized/product_01.webp 300w,"
                         media="(max-width: 300px) 100vw" 
@@ -470,8 +487,8 @@
                         225px"
                 >
                 <img 
-                    src="./images/product_01.png"
-                    srcset="./images/product_01.webp  900w,
+                    src="./images/original/product_01.png"
+                    srcset="./images/original/product_01.webp  900w,
                     ./images/compressed/product_01.webp 600w,
                     ./images/resized/product_01.webp 300w,"
                     alt="product_01."
@@ -502,7 +519,7 @@
             </li>
             <li class="carousel_li" data-index="1">
               <picture>
-                <source srcset="./images/product_02.webp  900w,
+                <source srcset="./images/original/product_02.webp  900w,
                         ./images/compressed/product_02.webp 600w,
                         ./images/resized/product_02.webp 300w,"
                         media="(max-width: 300px) 100vw" 
@@ -520,8 +537,8 @@
                         225px"
                 >
                 <img 
-                    src="./images/product_02.png"
-                    srcset="./images/product_02.webp  900w,
+                    src="./images/original/product_02.png"
+                    srcset="./images/original/product_02.webp  900w,
                     ./images/compressed/product_02.webp 600w,
                     ./images/resized/product_02.webp 300w,"
                     alt="product_02."
@@ -552,7 +569,7 @@
             </li>
             <li class="carousel_li" data-index="2">
               <picture>
-                <source srcset="./images/product_03.webp  900w,
+                <source srcset="./images/original/product_03.webp  900w,
                         ./images/compressed/product_03.webp 600w,
                         ./images/resized/product_03.webp 300w,"
                         media="(max-width: 300px) 100vw" 
@@ -570,8 +587,8 @@
                         225px"
                 >
                 <img 
-                    src="./images/product_03.png"
-                    srcset="./images/product_03.webp  900w,
+                    src="./images/original/product_03.png"
+                    srcset="./images/original/product_03.webp  900w,
                     ./images/compressed/product_03.webp 600w,
                     ./images/resized/product_03.webp 300w,"
                     alt="product_03."
@@ -602,7 +619,7 @@
             </li>
             <li class="carousel_li" data-index="3">
               <picture>
-                <source srcset="./images/product_04.webp  900w,
+                <source srcset="./images/original/product_04.webp  900w,
                         ./images/compressed/product_04.webp 600w,
                         ./images/resized/product_04.webp 300w,"
                         media="(max-width: 300px) 100vw" 
@@ -620,8 +637,8 @@
                         225px"
                 >
                 <img 
-                    src="./images/product_04.png"
-                    srcset="./images/product_04.webp  900w,
+                    src="./images/original/product_04.png"
+                    srcset="./images/original/product_04.webp  900w,
                     ./images/compressed/product_04.webp 600w,
                     ./images/resized/product_04.webp 300w,"
                     alt="product_04."
@@ -652,7 +669,7 @@
             </li>
             <li class="carousel_li" data-index="4">
               <picture>
-                <source srcset="./images/product_05.webp  900w,
+                <source srcset="./images/original/product_05.webp  900w,
                         ./images/compressed/product_05.webp 600w,
                         ./images/resized/product_05.webp 300w,"
                         media="(max-width: 300px) 100vw" 
@@ -670,8 +687,8 @@
                         225px"
                 >
                 <img 
-                    src="./images/product_05.png"
-                    srcset="./images/product_05.webp  900w,
+                    src="./images/original/product_05.png"
+                    srcset="./images/original/product_05.webp  900w,
                     ./images/compressed/product_05.webp 600w,
                     ./images/resized/product_05.webp 300w,"
                     alt="product_05."
@@ -702,7 +719,7 @@
             </li>
             <li class="carousel_li" data-index="5">
               <picture>
-                <source srcset="./images/product_06.webp  900w,
+                <source srcset="./images/original/product_06.webp  900w,
                         ./images/compressed/product_06.webp 600w,
                         ./images/resized/product_06.webp 300w,"
                         media="(max-width: 300px) 100vw" 
@@ -720,8 +737,8 @@
                         225px"
                 >
                 <img 
-                    src="./images/product_06.png"
-                    srcset="./images/product_06.webp  900w,
+                    src="./images/original/product_06.png"
+                    srcset="./images/original/product_06.webp  900w,
                     ./images/compressed/product_06.webp 600w,
                     ./images/resized/product_06.webp 300w,"
                     alt="product_06."
@@ -771,7 +788,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_01.webp  900w,
+            <source srcset="./images/original/gallery_01.webp  900w,
                     ./images/compressed/gallery_01.webp 600w,
                     ./images/resized/gallery_01.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -788,8 +805,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_01.png"
-                srcset="./images/gallery_01.webp  900w,
+                src="./images/original/gallery_01.png"
+                srcset="./images/original/gallery_01.webp  900w,
                 ./images/compressed/gallery_01.webp 600w,
                 ./images/resized/gallery_01.webp 300w,"
                 alt="gallery_01."
@@ -831,7 +848,7 @@
       >
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_02.webp  900w,
+            <source srcset="./images/original/gallery_02.webp  900w,
                     ./images/compressed/gallery_02.webp 600w,
                     ./images/resized/gallery_02.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -848,8 +865,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_02.png"
-                srcset="./images/gallery_02.webp  900w,
+                src="./images/original/gallery_02.png"
+                srcset="./images/original/gallery_02.webp  900w,
                 ./images/compressed/gallery_02.webp 600w,
                 ./images/resized/gallery_02.webp 300w,"
                 alt="gallery_02."
@@ -878,7 +895,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_03.webp  900w,
+            <source srcset="./images/original/gallery_03.webp  900w,
                     ./images/compressed/gallery_03.webp 600w,
                     ./images/resized/gallery_03.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -895,8 +912,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_03.png"
-                srcset="./images/gallery_03.webp  900w,
+                src="./images/original/gallery_03.png"
+                srcset="./images/original/gallery_03.webp  900w,
                 ./images/compressed/gallery_03.webp 600w,
                 ./images/resized/gallery_03.webp 300w,"
                 alt="gallery_03."
@@ -925,7 +942,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_04.webp  900w,
+            <source srcset="./images/original/gallery_04.webp  900w,
                     ./images/compressed/gallery_04.webp 600w,
                     ./images/resized/gallery_04.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -942,8 +959,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_04.png"
-                srcset="./images/gallery_04.webp  900w,
+                src="./images/original/gallery_04.png"
+                srcset="./images/original/gallery_04.webp  900w,
                 ./images/compressed/gallery_04.webp 600w,
                 ./images/resized/gallery_04.webp 300w,"
                 alt="gallery_04."
@@ -972,7 +989,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_05.webp  900w,
+            <source srcset="./images/original/gallery_05.webp  900w,
                     ./images/compressed/gallery_05.webp 600w,
                     ./images/resized/gallery_05.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -989,8 +1006,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_05.png"
-                srcset="./images/gallery_05.webp  900w,
+                src="./images/original/gallery_05.png"
+                srcset="./images/original/gallery_05.webp  900w,
                 ./images/compressed/gallery_05.webp 600w,
                 ./images/resized/gallery_05.webp 300w,"
                 alt="gallery_05."
@@ -1019,7 +1036,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_06.webp  900w,
+            <source srcset="./images/original/gallery_06.webp  900w,
                     ./images/compressed/gallery_06.webp 600w,
                     ./images/resized/gallery_06.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1036,8 +1053,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_06.png"
-                srcset="./images/gallery_06.webp  900w,
+                src="./images/original/gallery_06.png"
+                srcset="./images/original/gallery_06.webp  900w,
                 ./images/compressed/gallery_06.webp 600w,
                 ./images/resized/gallery_06.webp 300w,"
                 alt="gallery_06."
@@ -1066,7 +1083,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_07.webp  900w,
+            <source srcset="./images/original/gallery_07.webp  900w,
                     ./images/compressed/gallery_07.webp 600w,
                     ./images/resized/gallery_07.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1083,8 +1100,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_07.png"
-                srcset="./images/gallery_07.webp  900w,
+                src="./images/original/gallery_07.png"
+                srcset="./images/original/gallery_07.webp  900w,
                 ./images/compressed/gallery_07.webp 600w,
                 ./images/resized/gallery_07.webp 300w,"
                 alt="gallery_07."
@@ -1113,7 +1130,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_08.webp  900w,
+            <source srcset="./images/original/gallery_08.webp  900w,
                     ./images/compressed/gallery_08.webp 600w,
                     ./images/resized/gallery_08.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1130,8 +1147,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_08.png"
-                srcset="./images/gallery_08.webp  900w,
+                src="./images/original/gallery_08.png"
+                srcset="./images/original/gallery_08.webp  900w,
                 ./images/compressed/gallery_08.webp 600w,
                 ./images/resized/gallery_08.webp 300w,"
                 alt="gallery_08."
@@ -1160,7 +1177,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_09.webp  900w,
+            <source srcset="./images/original/gallery_09.webp  900w,
                     ./images/compressed/gallery_09.webp 600w,
                     ./images/resized/gallery_09.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1177,8 +1194,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_09.png"
-                srcset="./images/gallery_09.webp  900w,
+                src="./images/original/gallery_09.png"
+                srcset="./images/original/gallery_09.webp  900w,
                 ./images/compressed/gallery_09.webp 600w,
                 ./images/resized/gallery_09.webp 300w,"
                 alt="gallery_09."
@@ -1207,7 +1224,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_10_1.webp  300w,
+            <source srcset="./images/original/gallery_10_1.webp  300w,
                     ./images/resized/gallery_10.webp 600w,
                     ./images/compressed/gallery_10.webp 900w,"
                     media="(max-width: 300px) 100vw" 
@@ -1224,8 +1241,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_10_1.png"
-                srcset="./images/gallery_10_1.webp  300w,
+                src="./images/original/gallery_10_1.jpg"
+                srcset="./images/original/gallery_10_1.webp  300w,
                 ./images/resized/gallery_10.webp 600w,
                 ./images/compressed/gallery_10.webp 900w,"
                 alt="gallery_10."
@@ -1257,7 +1274,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_11.webp  900w,
+            <source srcset="./images/original/gallery_11.webp  900w,
                     ./images/compressed/gallery_11.webp 600w,
                     ./images/resized/gallery_11.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1274,8 +1291,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_11.png"
-                srcset="./images/gallery_11.webp  900w,
+                src="./images/original/gallery_11.png"
+                srcset="./images/original/gallery_11.webp  900w,
                 ./images/compressed/gallery_11.webp 600w,
                 ./images/resized/gallery_11.webp 300w,"
                 alt="gallery_11."
@@ -1304,7 +1321,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_12.webp  900w,
+            <source srcset="./images/original/gallery_12.webp  900w,
                     ./images/compressed/gallery_12.webp 600w,
                     ./images/resized/gallery_12.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1321,8 +1338,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_12.png"
-                srcset="./images/gallery_12.webp  900w,
+                src="./images/original/gallery_12.png"
+                srcset="./images/original/gallery_12.webp  900w,
                 ./images/compressed/gallery_12.webp 600w,
                 ./images/resized/gallery_12.webp 300w,"
                 alt="gallery_12."
@@ -1351,7 +1368,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_13.webp  900w,
+            <source srcset="./images/original/gallery_13.webp  900w,
                     ./images/compressed/gallery_13.webp 600w,
                     ./images/resized/gallery_13.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1368,8 +1385,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_13.png"
-                srcset="./images/gallery_13.webp  900w,
+                src="./images/original/gallery_13.png"
+                srcset="./images/original/gallery_13.webp  900w,
                 ./images/compressed/gallery_13.webp 600w,
                 ./images/resized/gallery_13.webp 300w,"
                 alt="gallery_13."
@@ -1398,7 +1415,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_14.webp  900w,
+            <source srcset="./images/original/gallery_14.webp  900w,
                     ./images/compressed/gallery_14.webp 600w,
                     ./images/resized/gallery_14.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1415,8 +1432,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_14.png"
-                srcset="./images/gallery_14.webp  900w,
+                src="./images/original/gallery_14.png"
+                srcset="./images/original/gallery_14.webp  900w,
                 ./images/compressed/gallery_14.webp 600w,
                 ./images/resized/gallery_14.webp 300w,"
                 alt="gallery_14."
@@ -1442,7 +1459,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_15.webp  900w,
+            <source srcset="./images/original/gallery_15.webp  900w,
                     ./images/compressed/gallery_15.webp 600w,
                     ./images/resized/gallery_15.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1459,8 +1476,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_15.png"
-                srcset="./images/gallery_15.webp  900w,
+                src="./images/original/gallery_15.png"
+                srcset="./images/original/gallery_15.webp  900w,
                 ./images/compressed/gallery_15.webp 600w,
                 ./images/resized/gallery_15.webp 300w,"
                 alt="gallery_15."
@@ -1489,7 +1506,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_16.webp  900w,
+            <source srcset="./images/original/gallery_16.webp  900w,
                     ./images/compressed/gallery_16.webp 600w,
                     ./images/resized/gallery_16.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1506,8 +1523,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_16.png"
-                srcset="./images/gallery_16.webp  900w,
+                src="./images/original/gallery_16.png"
+                srcset="./images/original/gallery_16.webp  900w,
                 ./images/compressed/gallery_16.webp 600w,
                 ./images/resized/gallery_16.webp 300w,"
                 alt="gallery_16."
@@ -1536,7 +1553,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_17.webp  900w,
+            <source srcset="./images/original/gallery_17.webp  900w,
                     ./images/compressed/gallery_17.webp 600w,
                     ./images/resized/gallery_17.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1553,8 +1570,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_17.png"
-                srcset="./images/gallery_17.webp  900w,
+                src="./images/original/gallery_17.png"
+                srcset="./images/original/gallery_17.webp  900w,
                 ./images/compressed/gallery_17.webp 600w,
                 ./images/resized/gallery_17.webp 300w,"
                 alt="gallery_17."
@@ -1583,7 +1600,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_18.webp  900w,
+            <source srcset="./images/original/gallery_18.webp  900w,
                     ./images/compressed/gallery_18.webp 600w,
                     ./images/resized/gallery_18.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1600,8 +1617,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_18.png"
-                srcset="./images/gallery_18.webp  900w,
+                src="./images/original/gallery_18.png"
+                srcset="./images/original/gallery_18.webp  900w,
                 ./images/compressed/gallery_18.webp 600w,
                 ./images/resized/gallery_18.webp 300w,"
                 alt="gallery_18."
@@ -1630,7 +1647,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_19.webp  900w,
+            <source srcset="./images/original/gallery_19.webp  900w,
                     ./images/compressed/gallery_19.webp 600w,
                     ./images/resized/gallery_19.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1647,8 +1664,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_19.png"
-                srcset="./images/gallery_19.webp  900w,
+                src="./images/original/gallery_19.png"
+                srcset="./images/original/gallery_19.webp  900w,
                 ./images/compressed/gallery_19.webp 600w,
                 ./images/resized/gallery_19.webp 300w,"
                 alt="gallery_19."
@@ -1677,7 +1694,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_20.webp  900w,
+            <source srcset="./images/original/gallery_20.webp  900w,
                     ./images/compressed/gallery_20.webp 600w,
                     ./images/resized/gallery_20.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1694,8 +1711,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_20.png"
-                srcset="./images/gallery_20.webp  900w,
+                src="./images/original/gallery_20.png"
+                srcset="./images/original/gallery_20.webp  900w,
                 ./images/compressed/gallery_20.webp 600w,
                 ./images/resized/gallery_20.webp 300w,"
                 alt="gallery_20."
@@ -1733,7 +1750,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_21.webp  900w,
+            <source srcset="./images/original/gallery_21.webp  900w,
                     ./images/compressed/gallery_21.webp 600w,
                     ./images/resized/gallery_21.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1750,8 +1767,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_21.png"
-                srcset="./images/gallery_21.webp  900w,
+                src="./images/original/gallery_21.png"
+                srcset="./images/original/gallery_21.webp  900w,
                 ./images/compressed/gallery_21.webp 600w,
                 ./images/resized/gallery_21.webp 300w,"
                 alt="gallery_21."
@@ -1787,7 +1804,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_22.webp  900w,
+            <source srcset="./images/original/gallery_22.webp  900w,
                     ./images/compressed/gallery_22.webp 600w,
                     ./images/resized/gallery_22.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1804,8 +1821,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_22.png"
-                srcset="./images/gallery_22.webp  900w,
+                src="./images/original/gallery_22.png"
+                srcset="./images/original/gallery_22.webp  900w,
                 ./images/compressed/gallery_22.webp 600w,
                 ./images/resized/gallery_22.webp 300w,"
                 alt="gallery_22."
@@ -1841,7 +1858,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_23.webp  900w,
+            <source srcset="./images/original/gallery_23.webp  900w,
                     ./images/compressed/gallery_23.webp 600w,
                     ./images/resized/gallery_23.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1858,8 +1875,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_23.png"
-                srcset="./images/gallery_23.webp  900w,
+                src="./images/original/gallery_23.png"
+                srcset="./images/original/gallery_23.webp  900w,
                 ./images/compressed/gallery_23.webp 600w,
                 ./images/resized/gallery_23.webp 300w,"
                 alt="gallery_23."
@@ -1889,7 +1906,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_24.webp  900w,
+            <source srcset="./images/original/gallery_24.webp  900w,
                     ./images/compressed/gallery_24.webp 600w,
                     ./images/resized/gallery_24.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1906,8 +1923,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_24.png"
-                srcset="./images/gallery_24.webp  900w,
+                src="./images/original/gallery_24.png"
+                srcset="./images/original/gallery_24.webp  900w,
                 ./images/compressed/gallery_24.webp 600w,
                 ./images/resized/gallery_24.webp 300w,"
                 alt="gallery_24."
@@ -1937,7 +1954,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_25.webp  900w,
+            <source srcset="./images/original/gallery_25.webp  900w,
                     ./images/compressed/gallery_25.webp 600w,
                     ./images/resized/gallery_25.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -1954,8 +1971,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_25.png"
-                srcset="./images/gallery_25.webp  900w,
+                src="./images/original/gallery_25.png"
+                srcset="./images/original/gallery_25.webp  900w,
                 ./images/compressed/gallery_25.webp 600w,
                 ./images/resized/gallery_25.webp 300w,"
                 alt="gallery_25."
@@ -1985,7 +2002,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_26.webp  900w,
+            <source srcset="./images/original/gallery_26.webp  900w,
                     ./images/compressed/gallery_26.webp 600w,
                     ./images/resized/gallery_26.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -2002,8 +2019,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_26.png"
-                srcset="./images/gallery_26.webp  900w,
+                src="./images/original/gallery_26.png"
+                srcset="./images/original/gallery_26.webp  900w,
                 ./images/compressed/gallery_26.webp 600w,
                 ./images/resized/gallery_26.webp 300w,"
                 alt="gallery_26."
@@ -2033,7 +2050,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_28.webp  900w,
+            <source srcset="./images/original/gallery_28.webp  900w,
                     ./images/compressed/gallery_28.webp 600w,
                     ./images/resized/gallery_28.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -2050,8 +2067,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_28.png"
-                srcset="./images/gallery_28.webp  900w,
+                src="./images/original/gallery_28.png"
+                srcset="./images/original/gallery_28.webp  900w,
                 ./images/compressed/gallery_28.webp 600w,
                 ./images/resized/gallery_28.webp 300w,"
                 alt="gallery_28."
@@ -2081,7 +2098,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_29.webp  900w,
+            <source srcset="./images/original/gallery_29.webp  900w,
                     ./images/compressed/gallery_29.webp 600w,
                     ./images/resized/gallery_29.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -2098,8 +2115,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_29.png"
-                srcset="./images/gallery_29.webp  900w,
+                src="./images/original/gallery_29.png"
+                srcset="./images/original/gallery_29.webp  900w,
                 ./images/compressed/gallery_29.webp 600w,
                 ./images/resized/gallery_29.webp 300w,"
                 alt="gallery_29."
@@ -2129,7 +2146,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_30.webp  900w,
+            <source srcset="./images/original/gallery_30.webp  900w,
                     ./images/compressed/gallery_30.webp 600w,
                     ./images/resized/gallery_30.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -2146,8 +2163,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_30.png"
-                srcset="./images/gallery_30.webp  900w,
+                src="./images/original/gallery_30.png"
+                srcset="./images/original/gallery_30.webp  900w,
                 ./images/compressed/gallery_30.webp 600w,
                 ./images/resized/gallery_30.webp 300w,"
                 alt="gallery_30."
@@ -2177,7 +2194,7 @@
       calc(100vw - 9rem - 200px)">
           </picture> -->
           <picture class="gallery_picture">
-            <source srcset="./images/gallery_32.webp  900w,
+            <source srcset="./images/original/gallery_32.webp  900w,
                     ./images/compressed/gallery_32.webp 600w,
                     ./images/resized/gallery_32.webp 300w,"
                     media="(max-width: 300px) 100vw" 
@@ -2194,8 +2211,8 @@
                     225px"
             >
             <img 
-                src="./images/gallery_32.png"
-                srcset="./images/gallery_32.webp  900w,
+                src="./images/original/gallery_32.png"
+                srcset="./images/original/gallery_32.webp  900w,
                 ./images/compressed/gallery_32.webp 600w,
                 ./images/resized/gallery_32.webp 300w,"
                 alt="gallery_32."
@@ -2232,7 +2249,7 @@
     <h2 class="heading_2" data-aos="fade-up">VALUED CLIENTS</h2>
     <hr class="underline" data-aos="fade-up" />
     <picture id="clients-picture">
-      <source srcset="./images/Clients-Mobile.webp  900w,
+      <source srcset="./images/original/Clients-Mobile.webp  900w,
       ./images/compressed/Clients-Mobile.webp 600w,
       ./images/resized/Clients-Mobile.webp 300w,"
       media="(max-width:750px)" 
@@ -2250,9 +2267,9 @@
       calc(100vw - 9rem - 200px),
       225px"
       >
-      <source srcset="./images/Clients-Mobile.png  900w,
-      ./images/compressed/Clients-Mobile.png 600w,
-      ./images/resized/Clients-Mobile.png 300w,"
+      <source srcset="./images/original/Clients-Mobile.png  900w,
+      ./images/compressed/Clients-Mobile.webp 600w,
+      ./images/resized/Clients-Mobile.webp 300w,"
       media="(max-width:750px)"
       type="image/webp"
       loading="lazy"
@@ -2260,22 +2277,23 @@
       width="200" height="200"
       id="clients_img" 
       data-aos="fade-up"
+      data-aos-delay="250"
       sizes="(max-width: 300px) 100vw, 
-      (max-width: 500px) calc(100vw - 2rem), data-aos-delay="250"
+      (max-width: 500px) calc(100vw - 2rem), 
       (max-width: 600px) 50vw,
       (max-width: 700px) calc(100vw - 6rem),
       (max-width: 900px) 33vw, 
       calc(100vw - 9rem - 200px),
       225px"
       >
-      <source srcset="./images/Clients-Pc.webp  900w,
+      <source srcset="./images/original/Clients-Pc.webp  900w,
       ./images/compressed/Clients-Pc.webp 600w,
       ./images/resized/Clients-Pc.webp 300w,"
       media="(min-width:750px)"
       type="image/webp"
       loading="lazy"
       alt="Clients-pc.webp." 
-      width="200" height="200"
+      width="" height=""
       id="clients_img" 
       data-aos="fade-up"
       sizes="(max-width: 300px) 100vw, 
@@ -2287,12 +2305,12 @@
       225px"
       >
       <img 
-      src="./images/Clients-Pc.png"
-      srcset="./images/Clients-Pc.png 900w,
-      ./images/compressed/Clients-Pc.png 600w,
-      ./images/resized/Clients-Pc.png 300w,"
+      src="./images/original/Clients-Pc.png"
+      srcset="./images/original/Clients-Pc.png 900w,
+      ./images/compressed/Clients-Pc.webp 600w,
+      ./images/resized/Clients-Pc.webp 300w,"
       alt="Clients-pc."
-      width="200" height="200"
+      width="" height=""
       media="(min-width:750px)"
       id="clients_img"
       loading="lazy"
@@ -2335,13 +2353,15 @@
     <h2 class="heading_2" data-aos="fade-up">ABOUT</h2>
     <hr class="underline" data-aos="fade-up"/>
     <picture>
-      <source srcset="./images/about.webp  900w,
+      <source srcset="
+              ./images/original/about.png  1200w,
+              ./images/original/about.webp  900w,
               ./images/compressed/about.webp 600w,
               ./images/resized/about.webp 300w,"
               media="(max-width: 300px) 100vw" 
               type="image/webp"
               alt="about." 
-              width="200" height="200"
+              width="" height=""
               id="about_img"
               loading="lazy"
               data-aos="fade-up"
@@ -2354,12 +2374,14 @@
               225px"
       >
       <img 
-          src="./images/about.png"
-          srcset="./images/about.webp  900w,
+          src="./images/original/about.webp"
+          srcset="
+          ./images/original/about.png  1200w,
+          ./images/original/about.webp  900w,
           ./images/compressed/about.webp 600w,
           ./images/resized/about.webp 300w,"
           alt="about."
-          width="200" height="200"
+          width="" height=""
           id="about_img"
           loading="lazy"
           data-aos="fade-up"
@@ -2467,7 +2489,7 @@
         <path d="M5,9l1.41,1.41L11,5.83V22H13V5.83l4.59,4.59L19,9l-7-7L5,9z" />
       </svg></a>
   </footer>
-  <script async defer>
+  <script defer>
 
     document.querySelectorAll('img')
       .forEach((img) =>
