@@ -151,7 +151,7 @@ let radio = 450;
       item.addEventListener('click', function(e){
         e.stopPropagation();
         moveSlides(this.dataset.index);
-      });
+      }, {passive: true});
     });50
     radStep = (2*Math.PI) / carouselItems.length;
     options.step = 0;
@@ -163,7 +163,7 @@ let radio = 450;
 
 
 
-  })
+  }, {passive: true})
   function updateSlides(){
     for(let i=0; i<carouselItems.length; i++){
       item = carouselItems[i];
@@ -217,7 +217,7 @@ let radio = 450;
 window.addEventListener("load",function() {
   moveSlides(newStep)
   myTimer = setInterval(function(){ updateSlides()}, 4);
-})
+}, {passive: true})
 
 // load more
 
