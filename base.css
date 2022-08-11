@@ -1365,12 +1365,12 @@ flex:calc(100% - 2rem);
     margin-bottom: 8rem;
   }
   #clients_img{
-    max-width: calc(100% - 5rem);
+    max-width: calc(100% - 8rem);
     min-height: calc(100% - 5rem);
-    width: calc(100% - 5rem);
+    width: calc(100% - 8rem);
     height: calc(100% - 5rem);
     margin-block: 2rem;
-    margin-inline: .5rem;
+    margin-inline: .6rem;
     padding: 0rem;
   }
 
@@ -1449,7 +1449,9 @@ flex:calc(100% - 2rem);
     user-select : none;
     object-fit : cover;
     /* min-height : 36.4rem; */
-    max-width : 98rem;
+    /* max-width : 98rem; */
+    min-height: calc(100% - 5rem);
+    max-width: calc(100% - 5rem);
     margin-bottom: 5rem;
     /* margin-block: -5rem -8rem; */
   }
