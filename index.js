@@ -210,7 +210,7 @@ $(document).ready(function(){
 
 // to_top
 
-$('a[href=#top]').click(function () {
+$('a[href*=\\#top]').click(function () {
   $('body,html').animate({ scrollTop: 0 }, 'slow');
   return false;
 });
