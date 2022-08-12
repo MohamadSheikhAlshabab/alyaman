@@ -557,6 +557,8 @@ width: 100%;
 .logo_img{
     margin-inline-end: 1rem;
     margin-inline-start: 2rem;
+    width: 70%;
+    height: auto;
 }
 
 .logo_heading{
@@ -1171,6 +1173,7 @@ display: none;
 } */
 .products_img{
   width: 100%;
+  height: auto;
   cursor: pointer;
   mix-blend-mode: darken;
 }
@@ -1565,14 +1568,14 @@ flex:calc(100% - 2rem);
     letter-spacing : 0em;
     pointer-events : auto;
     font-size : 2.5rem;
-    color : var(--dark_gray);
+    color : #87750d;
 
     font-family: avenir-lt-w01_85-heavy1475544, avenir-lt-w05_85-heavy, sans-serif;
     font-size: 2.5rem;
     line-height: 2.25rem;
     /* margin-block-start: 6rem; */
     margin-block: 2.7rem;
-    color: var(--yellow);
+    /* color: var(--yellow); */
   }
   .contacts_email{
     margin-block: 4rem 1rem;
