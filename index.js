@@ -163,9 +163,10 @@ let radio = 450;
   function moveSlides(newStep){
     move = angleDist(newStep ,options.step);
     // console.log(options.step, newStep, move);
-    // TweenLite.to(options, 1, {step: newStep - options.step  , onUpdate:updateSlides});
+    TweenLite.to(options, 1, {step: newStep - options.step  , onUpdate:updateSlides});
     // options.step = -(Math.round(move));
   }
+
   function angleDist(a, b){
     let diff = a - b;
     let dist = ((diff / Math.PI) %(2*Math.PI) /Math.PI);
@@ -180,7 +181,6 @@ window.addEventListener("load",function() {
 }, {passive: true})
 
 // load more
-
 $(document).ready(function(){
   $(".gallery_container").hide();
   $(".gallery_picture").hide();
@@ -200,21 +200,13 @@ $(document).ready(function(){
     if($(".gallery_img:hidden").length == 0) {
       $("#loadMore").text("No More").addClass("noContent").fadeOut('slow');
     }
-  //   $('html,body').animate({
-  //     scrollTop: $(this).offset().top
-  // }, 1500);
   });
-
 })
-
-
 // to_top
-
 $('a[href*=\\#top]').click(function () {
   $('body,html').animate({ scrollTop: 0 }, 'slow');
   return false;
 });
-
 $(window).scroll(function () {
   if ($(this).scrollTop() > 50) {
       $('.totop a').fadeIn();
