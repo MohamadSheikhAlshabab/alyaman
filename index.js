@@ -166,7 +166,6 @@ let radio = 450;
     TweenLite.to(options, 1, {step: newStep - options.step  , onUpdate:updateSlides});
     // options.step = -(Math.round(move));
   }
-
   function angleDist(a, b){
     let diff = a - b;
     let dist = ((diff / Math.PI) %(2*Math.PI) /Math.PI);
@@ -174,12 +173,10 @@ let radio = 450;
     return dist;
   }
 })();
-
 window.addEventListener("load",function() {
   moveSlides(newStep)
   myTimer = setInterval(function(){ updateSlides()}, 4);
 }, {passive: true})
-
 // load more
 $(document).ready(function(){
   $(".gallery_container").hide();

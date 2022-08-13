@@ -1,0 +1,361 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+@import url('//db.onlinewebfonts.com/c/3416b4cfa5dbaadadef21fdc73d347cb?family=Avenir+LT+Pro+36+Light');@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gray: #232323;
+    --yellow: #EDCD1F;
+    --dark_gray: #1E2D3B;
+    --white: #ffffff;
+    --light_gray: #F7F7F7;
+    --light_black: #3B3A3A;
+    --very_light_gray: #c6c6c6;
+    --dark_blue: #3D5975;
+    --light_white: ##FBF3F3;
+    --semi_white: #F7F7F7;
+    --semi-transparent: #3B3A3A78;
+    --ff-primary: avenir-lt-w01_35-light1475496,avenir-lt-w05_35-light,sans-serif;
+    --ff-logo: "raleway-semibold","raleway",sans-serif;
+    --ff-Roboto: Roboto;
+    --fs-stand: clamp(1rem,5vw,80vmax);
+    --fs-xl: 5.6rem;
+    --fs-600: 2rem;
+    --fs-400: 1.125rem;
+    --fs-xxl: 3rem
+}
+
+html,body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--gray);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    z-index: 99
+}
+
+#status {
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -15px
+}
+
+.spinner {
+    margin: 0 auto;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: var(--yellow);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -.9s;
+    animation-delay: -.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s;
+}
+.myslides_img,#clients_img,#about_img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-inline-size: 100%;
+    padding: 2rem;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--gray);
+    padding: 0 4.5rem;
+    min-height: 5.3rem;
+    height: 5.3rem;
+    box-shadow: 0 .1rem .4rem rgba(0,0,0,.25);
+    z-index: 1;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+}
+
+#logo_div {
+    position: static;
+    min-height: 130%;
+    max-width: 28rem;
+    width: 28rem;
+    height: 130%;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo_img {
+    margin-inline-end:1rem;margin-inline-start:2rem;width: 100%;
+    max-width: 70%;
+    height: auto;
+}
+
+.logo_heading {
+    flex: 50%;
+    margin-inline-start:1rem;margin-block-start:2rem;}
+
+#logo_h1 {
+    font-family: var(--ff-logo);
+    font-size: clamp(472%,3.7vw,500%);
+    line-height: .8;
+    letter-spacing: .185rem;
+    font-weight: 600;
+    color: var(--dark_gray);
+}
+
+#logo_h3 {
+    font-family: var(--ff-primary);
+    font-size: clamp(calc(150%),1.8rem,80vmax);
+    letter-spacing: .09rem;
+    line-height: 1.8;
+    font-weight: 100;
+    color: var(--dark_gray);
+}
+
+#ul_pc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 2rem;
+    font-family: var(--ff-primary);
+    font-size: 1.4rem;
+    line-height: 3.7;
+    font-weight: 100;
+    text-decoration: rgb(237,205,31);
+    max-width: 62.7rem;
+    width: 62.7rem;
+}
+
+a {
+    color: var(--white);
+    text-decoration: none
+}
+
+.nav_link:focus,.nav_link:hover,.nav_link.active_link {
+    color: var(--yellow);
+}
+
+#ABOUT,#PRODUCTS {
+    background-color: var(--light_gray);
+    overflow: hidden;
+}
+
+.slideshow-container {
+    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 60rem;
+    position: relative
+}
+
+.mySlides {
+    width: 100%;
+    height: 60rem;
+    position: absolute;
+    transition: all .5s
+}
+
+.myslides_img {
+    min-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0
+}
+
+.prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    max-width: auto;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    fill: var(--white)
+}
+
+.next {
+    right: 0;
+    margin: 0 1rem;
+    transform: scaleX(-1)
+}
+
+.next1 {
+    margin-block:-5rem;padding: 1.9rem
+}
+
+.text {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 22rem;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    line-height: 6.6rem;
+    letter-spacing: 1.8rem;
+    font-size: var(--fs-xxl);
+    font-family: 'Monoton';
+    background-color: var(--semi-transparent);
+    background-repeat: repeat;
+    background-size: 5rem;
+    -webkit-box-shadow: inset 0 0 0 .3rem var(--white);
+    -moz-box-shadow: inset 0 0 0 .3rem var(--white);
+    box-shadow: inset 0 0 0 .3rem var(--white)
+}
+.italic {
+    font-style: italic
+}
+
+.dots {
+    margin-block:2rem;text-align: center
+}
+
+.dot {
+    cursor: pointer;
+    min-height: 15px;
+    max-width: 15px;
+    width: 1.5rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,.dot:hover {
+    background-color: #717171
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s,visibility .35s,min-height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1
+}
+#hamburger-menu {
+    max-width: 800px;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 9
+}
+#hamburger-input {
+    display: none
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    max-width: 3rem;
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    display: none;
+    border: none;
+    padding: 0;
+    margin: 8px;
+    font-family: 'Cabin',Sans-serif;
+    background: linear-gradient(to bottom,var(--yellow),var(--yellow)20%,var(--gray) 20%,var(--gray) 40%,var(--yellow)40%,var(--yellow)60%,var(--gray) 60%,var(--gray) 80%,var(--yellow)80%,var(--yellow)100%)
+}
