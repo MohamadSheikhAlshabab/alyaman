@@ -43,6 +43,130 @@ html,body{
     justify-content: flex-start;
     align-items: center;
 }
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, min-height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+#main-menu {
+  display: block;
+  min-height: 10rem;
+  width: 100%;
+  height: 10rem;
+  max-width: 100%;
+  background: var(--yellow);
+  margin: 0px;  
+  z-index: 9;
+}
+#hamburger-menu  {
+  max-width: 800px;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+#hamburger-menu  li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+#hamburger-menu  a {
+  color: var(--dark_gray);
+  font-size: clamp( .25rem, 1.5vw, 80vmax);
+  text-decoration: none;
+}
+#hamburger-menu  a:hover {
+  text-decoration: underline;
+}
+#hamburger-input{
+  display: none;
+}
+#hamburger-menu {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    max-width: 3rem;
+    width: 3rem;
+    height:3rem ;
+    min-height: 3rem;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 8px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      var(--yellow), var(--yellow)20%, 
+      var(--gray) 20%, var(--gray) 40%, 
+      var(--yellow)40%, var(--yellow)60%, 
+      var(--gray)  60%, var(--gray)  80%, 
+      var(--yellow)80%, var(--yellow)100%
+    );
+}
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: -25rem;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color:var(--yellow);
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+#hamburger-menu h3 {
+  color: var(--white);
+  font-size: 2.2rem;
+}
+#hamburger-menu #ul_mobile {
+  padding-left: 0px;
+  margin-block: 10rem;
+margin-inline: 10rem;
+}
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+  margin-block: 2rem;
+  text-align: center;
+}
+#hamburger-menu a {
+  color:var(--white);
+  font-size: clamp(1.3rem , 3.3rem, 80vmin);
+  text-decoration: none;
+}
+#hamburger-menu a:hover {
+  text-decoration: none;
+  background-color: var(--dark_gray);
+  max-width: 50%;
+  width: 100%;
+  padding: 1rem;
+  margin: -1rem;
+}
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    right: 0;
+}
+#hamburger-input:checked ~ .overlay{
+  visibility: visible;
+  opacity: 0.5;
+} 
 .basic_div{
     display: flex;
     flex-direction: column;
@@ -331,6 +455,7 @@ html,body{
     vertical-align: baseline;
     letter-spacing: 2.75px;
     margin-block-start: 6rem;
+    font-weight: bolder;
   }
   .heading_gallery{
     font-size: clamp( calc(150%), 2.045vw, 40vmax);
@@ -452,9 +577,10 @@ html,body{
 
   .contacts_para{
     font-size: 3rem;
-    margin-block-end: 5rem;
-    font-family:futura-lt-w01-light,sans-serif;
     margin-inline: 3rem;
+    margin-block: 5rem;
+    font-weight: 300;
+    font-family: system-ui;
   }
   .contacts_heading{
     border-top-color : currentcolor;
@@ -673,7 +799,7 @@ html,body{
       --fs-600:1rem;
       --fs-400:.5rem;
       --fs-xxl:5rem;
-    }gallery_button
+    }
     iframe{
         width: 94rem;
         height: 36.5rem;
