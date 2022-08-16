@@ -174,6 +174,12 @@ let radio = 450;
   }
 })();
 window.addEventListener("load",function() {
+  function moveSlides(newStep){
+    move = angleDist(newStep ,options.step);
+    // console.log(options.step, newStep, move);
+    TweenLite.to(options, 1, {step: newStep - options.step  , onUpdate:updateSlides});
+    // options.step = -(Math.round(move));
+  }
   moveSlides(newStep)
   myTimer = setInterval(function(){ updateSlides()}, 4);
 }, {passive: true})
