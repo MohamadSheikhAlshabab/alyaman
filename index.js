@@ -1,9 +1,14 @@
-    // preloader
+jQuery(document).ready(function($){
+
+  
+
+// preloader
     $(function () {
         $("#status").fadeOut(3000);
         $("#preloader").fadeOut(3500);
         $(".overlay").hide();
       });
+    });
       // to top 
   
       document.querySelectorAll('img')
@@ -13,6 +18,7 @@
 
         )
       )
+  jQuery(document).ready(function($){
       $(function() {
         window.addEventListener('load', AOS.refresh)
         AOS.init({
@@ -24,7 +30,7 @@
           once: true
         });
       });
-
+    });
       //Get the button:
       mybutton = document.getElementById("to_top");
   
@@ -55,7 +61,7 @@
       once: true
     });
   
-  
+    jQuery(document).ready(function($){
       $('#hamburger-input').click(function () {
         $(".overlay").show();
         $('#sidebar-menu').show(500);
@@ -161,6 +167,7 @@
           }
         })
       })
+    });
 
       // slides
       let slideIndex = 1;
@@ -298,6 +305,7 @@
     //     myTimer = setInterval(function () { updateSlides() }, 4);
     //   }, { passive: true })
       // load more
+      jQuery(document).ready(function($){
       $(document).ready(function () {
         $(".gallery_container").hide();
         $(".gallery_picture").hide();
@@ -331,3 +339,5 @@
           $('.totop a').fadeOut();
         }
       });
+
+        });
