@@ -4,20 +4,20 @@ jQuery(document).ready(function($){
 
 // preloader
     $(function () {
-        $("#status").fadeOut(3000);
-        $("#preloader").fadeOut(3500);
+        $("#status").fadeOut(500);
+        $("#preloader").fadeOut(800);
         $(".overlay").hide();
       });
     });
       // to top 
   
-      document.querySelectorAll('img')
-      .forEach((img) =>
-        img.addEventListener('load', () =>
-          AOS.refresh()
+      // document.querySelectorAll('img')
+      // .forEach((img) =>
+      //   img.addEventListener('load', () =>
+      //     AOS.refresh()
 
-        )
-      )
+      //   )
+      // )
   jQuery(document).ready(function($){
       $(function() {
         window.addEventListener('load', AOS.refresh)
@@ -341,3 +341,4 @@ jQuery(document).ready(function($){
       });
 
         });
+document.cookie = "name = Alyaman; ;secure;sameSite=none;expires =" + new Date (9999,0,1).toUTCString();

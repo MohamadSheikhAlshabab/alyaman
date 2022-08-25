@@ -9,13 +9,19 @@
         "purpose": "maskable"
       },
       {
-        "src": "images/resized/logo.webp",
+        "src": "./images/resized/logo.webp",
         "type": "image/webp",
         "sizes": "192x192",
         "purpose": "maskable"
       },
       {
-        "src": "/images/original/logo.png",
+        "src": "./images/smallest_size/logo.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      },
+      {
+        "src": "./images/original/logo.png",
         "type": "image/png",
         "sizes": "512x512",
         "purpose": "maskable"
