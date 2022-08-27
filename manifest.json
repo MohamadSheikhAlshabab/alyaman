@@ -5,7 +5,7 @@
       {
         "src": "./images/compressed/logo.webp",
         "type": "image/svg+xml",
-        "sizes": "192x192",
+        "sizes": "144x144",
         "purpose": "maskable"
       },
       {

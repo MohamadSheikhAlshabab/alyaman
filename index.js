@@ -170,7 +170,7 @@ jQuery(document).ready(function($){
     });
 
       // slides
-      let slideIndex = 1;
+      slideIndex = 1;
       showSlides(slideIndex);
   
       // Next/previous controls
