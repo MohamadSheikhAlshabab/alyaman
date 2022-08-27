@@ -321,7 +321,7 @@ jQuery(document).ready(function($){
             d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
         </svg>`))
           $(".gallery_picture:hidden").slice(0, 8).show();
-          $(".gallery_img:hidden").slice(0, 8).show();
+          $(".gallery_img:hidden").slice(0, 4).show();
           if ($(".gallery_img:hidden").length == 0) {
             $("#loadMore").text("No More").addClass("noContent").fadeOut('slow');
           }
